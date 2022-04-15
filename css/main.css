@@ -287,7 +287,7 @@ section:last-of-type {
   /* height: 70px; */
   position: relative;
   text-align: center;
-  background-color: #0c137370;
+  background-color: #fff;
   box-shadow: 0 0 3px #26262642;
   border-radius: 3px;
   margin: 0 5px;
@@ -305,7 +305,7 @@ section:last-of-type {
   align-items: center;
   height: 100%;
   border-bottom: 3px solid transparent;
-  color: #eee;
+  color: var(--link);
 }
 .nav-main .nav-list .nav-li:active .nav-li-a {
   background-color: #efefef;
