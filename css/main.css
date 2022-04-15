@@ -503,7 +503,7 @@ header.main {
   font-size: 2.4rem;
   letter-spacing: 6px;
   width: 30rem;
-  border-right: .1rem solid #555;
+  /* border-right: .1rem solid #555; */
   overflow: hidden;
   white-space: nowrap;
 }
