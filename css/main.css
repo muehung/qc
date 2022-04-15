@@ -507,6 +507,9 @@ header.main {
   overflow: hidden;
   white-space: nowrap;
 }
+.main-title .zh {
+  font-family: 'Noto Sans TC', sans-serif;
+}
 
 .main-sub {}
 
