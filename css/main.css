@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 :root {
-  --theme300: #dda0f3;
-  --theme500: #860e36;
+  --theme300: #efb54a;
+  --theme500: #c68200;
   --theme700: #580420;
   --theme900: #250207;
   --txtColor: #222222;
-  --link: #923ab3;
-  --themebg: #6b4a77;
+  --link: #c05e0d;
+  --themebg: #373030;
 }
 
 * {
@@ -28,12 +28,12 @@ body {
   line-height: 1.8;
   overflow: hidden;
   color: var(--theme900);
-  /* background-color: #efefef; */
+  /* background-color: var(--themebg); */
 }
 @media (max-width: 768px) {
   body {
     min-height: 100%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
   }
 }
 
@@ -48,10 +48,12 @@ h6 {
 
 h1 {
   font-size: 42px;
+  font-weight: 300;
 }
 
 h2 {
   font-size: 36px;
+  font-weight: 400;
 }
 
 h3 {
@@ -240,7 +242,7 @@ section:last-of-type {
 }
 
 .nav-main {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 999;
   width: 100%;
@@ -251,14 +253,14 @@ section:last-of-type {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(#ffffffcc 10%,#ffffff00 80%);
+  /* background: linear-gradient(#ffffffcc 10%,#ffffff00 80%); */
+  background-color: #ffffffbb;
 }
 
 /* logo */
 .nav-main .nav-logo {
   /* flex: 0 0 15%; */
   height: 100%;
-  padding: 5px;
 }
 
 .nav-main .nav-logo a {
@@ -268,7 +270,7 @@ section:last-of-type {
 
 .nav-main .nav-logo img {
   width: 100%;
-  max-width: 65px;
+  max-width: 50px;
   background-color: #fff;
 }
 
@@ -287,8 +289,8 @@ section:last-of-type {
   /* height: 70px; */
   position: relative;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 0 3px #26262642;
+  /* background-color: #fff;
+  box-shadow: 0 0 3px #26262642; */
   border-radius: 3px;
   margin: 0 5px;
   -webkit-transform: translateY(0px);
@@ -304,7 +306,7 @@ section:last-of-type {
   justify-content: center;
   align-items: center;
   height: 100%;
-  border-bottom: 3px solid transparent;
+  /* border-bottom: 3px solid transparent; */
   color: var(--link);
 }
 .nav-main .nav-list .nav-li:active .nav-li-a {
@@ -495,39 +497,43 @@ section:last-of-type {
 header.main {
   margin-top: 80px;
   text-align: center;
+  background: url('../img/cover/main.jpg') no-repeat center /cover;
+  padding: 20px 0;
 }
-
-.title-top {
+ 
+/* .title-top {
   font-size: 15px;
   color: #aaa;
   margin-bottom: 0;
-}
+} */
 .main-title {
-  font-family: 'Roboto Mono', monospace,'Noto Sans TC', sans-serif;
+  /* font-family: 'Roboto Mono', monospace,'Noto Sans TC', sans-serif; */
   margin: 0% auto 1%;
   font-size: 2.8rem;
-  color: #808080;
 }
+
 .main-title .en {
-  font-family: 'Square Peg', cursive;
   letter-spacing: -1px;
 }
 .main-title .zh {
-  color: #808080;
-  font-family: 'Noto Sans TC', sans-serif;
+  /* font-family: 'Noto Sans TC', sans-serif; */
   white-space: nowrap;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
 }
-
+/*
 .main-sub {
   color: #808080;
-}
+} */
 
 .main-txtbox {
-  padding-bottom: 20px;
-  color: #806060;
+  padding: 20px;
+  color: #514141;
 }
-.main-txtbox p {
+.main-txtbox .til {
   margin-bottom: 10px;
+  font-weight: normal;
 }
 
 .social {}
@@ -874,6 +880,7 @@ footer {
   color: #fff;
   position: relative;
   height: 330px;
+  margin-top: 80px;
 }
 
 /* cybersec */
