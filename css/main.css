@@ -698,6 +698,14 @@ header.main {
 
 
 
+/* index about */
+.section-about {}
+.about-headbox {
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
 /* footer */
 footer {
   width: 100%;
