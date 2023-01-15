@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>萱容 Mue</title>
+    <title>Mue's portfolio</title>
     <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="" />
@@ -40,7 +40,18 @@
 <body>
     <nav class="nav-main">
         <div class="nav-logo">
-            <a href="#!">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Mue's">
+            </a>
+        </div>
+        <a type="button" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <nav class="nav-main">
+        <div class="nav-logo">
+            <a href="index.html">
                 <img src="img/logo.png" alt="Mue's">
             </a>
         </div>
@@ -50,41 +61,58 @@
             <span></span>
         </a>
         <ul class="nav-list" id="nav-xs">
+            <!-- <li class="nav-li">
+                <a href="index.html" class="nav-li-a">
+                    Home
+                </a>
+            </li> -->
             <li class="nav-li">
-                <a href="#portfolio" class="nav-li-a">
-                    專案回顧
+                    <a href="mailto:hung.co24@gmail.com" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                         E-mail 聯絡
+                    </a>
+            </li>
+            <li class="nav-li">
+                <a href="index.html#portfolio" class="nav-li-a">
+                    精選專案
                 </a>
             </li>
             <li class="nav-li">
-                <a href="#skills" class="nav-li-a">
+                <a href="index.html#skills" class="nav-li-a">
                     技能
                 </a>
             </li>
             <li class="nav-li">
-                <a href="#about" class="nav-li-a">
+                <a href="index.html#about" class="nav-li-a">
                     關於
                 </a>
             </li>
         </ul>
+    </nav>
     </nav>
 
     <header class="main">
         <div class="container">
             <div class="main-txtbox">
                 <h2 class="til">
-                    創造專案價值，解決需求痛點
-                    <!-- 設計角度，連接人與價值，找到正確的需求痛點 -->
+                    <!-- 創造專案價值，解決需求痛點 -->
+                    嗨！您好👋 
                 </h2>
-                <h2 class="til">
-                    涉略程式觀念，共同達成預期成果
-                </h2>
+                <h4 class="til">
+                    我是洪萱容，是名網頁視覺設計師
+                    <!-- 涉略程式觀念，共同達成預期成果 -->
+                </h4>
+                <h4 class="til">
+                    請讓我與您一起，創造更多美好網站規劃
+                </h4>
             </div>
-            
-            <div class="social">
+
+            <div class="social d-none">
                 <ul class="social-list">
                     <li>
                         <a href="mailto:hung.co24@gmail.com" target="_blank">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
+                             E-mail 聯絡
                         </a>
                     </li>
                     <li>
@@ -117,12 +145,13 @@
                 </ul>
                 
             </div>
+
         </div>
         
     </header>
     <section class="section-files main" id="portfolio">
         <div class="container">
-            <h2 class="title">專案回顧</h2>
+            <h2 class="title">精選專案</h2>
             <div class="row justify-content-center">
                 <div class="col-10 col-sm-6 col-md-4 file-item">
                     <a href="file_cybersec.html" class="file-link">
@@ -192,9 +221,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-10 col-sm-6 col-md-4 file-item">
+                <!-- <div class="col-10 col-sm-6 col-md-4 file-item">
                     <a href="file_accs.html" class="file-link">
-                        <!-- <img src="img/" alt="" loading="lazy"> -->
                         <div class="file-cover">
                             <img src="img/cover/accs2021.jpg" loading="lazy" class="img">
                         </div>
@@ -217,7 +245,6 @@
                 </div>
                 <div class="col-10 col-sm-6 col-md-4 file-item">
                     <a href="file_cloudmile.html" class="file-link">
-                        <!-- <img src="img/" alt="" loading="lazy"> -->
                         <div class="file-cover">
                             <img src="img/cover/cloudmile2021.jpg" loading="lazy" class="img">
                         </div>
@@ -236,7 +263,7 @@
                             <div class="info-date">2021</div>
                         </div>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -244,39 +271,50 @@
     <section class="section-about" id="about">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 pb-5 about-headbox">
+                <div class="col-12 pb-5">
                     <p class="title-top">
                         關於
                     </p>
                     <h1 class="main-title">
-                        <span class="en">Mue Hung</span> 
                         <span class="zh">洪萱容</span>
+                        <span class="en">Mue Hung</span> 
                     </h1>
                     <p class="main-sub">
-                           在 7 年網頁設計中，熱於解決問題與學習新知。
-                            <br>用設計思維評估需求，在視覺設計與前端工程中遊走。
+                        <ul class="ul">
+                            <li>
+                                我比較內向，但喜歡探索新鮮事物。
+                            </li>
+                            <li>
+                               喜歡學習前端與設計二個領域、因為需要全面性的判斷與理解。
+                            </li>
+                            <li>
+                                偏好在團隊中，討論責任歸屬，再獨立作業。
+                            </li>
+                        </ul>
                     </p>
                 </div>
-                <div class="col-12 col-md-3">
-                    <p>居住於新北市板橋，目前在 <a href="https://www.ithome.com.tw/aboutus/" target="_blank">iThome 電週文化</a>擔任網站視覺設計</p>
-                    
-                </div>
-                <div class="col-12 col-md-5">
-                    目前負責項目：
+                <!-- <div class="col-12 col-lg-3">
+                    <p>居住於新北市板橋，目前在 <a href="https://www.ithome.com.tw/aboutus/" target="_blank">iThome 電週文化</a>擔任網站視覺設計師
+                    </p>
+                </div> -->
+                <div class="col-12 col-lg-6">
+                    擅長與經歷項目：
                     <ul class="ul">
                         <li>
-                            <a href="https://ithelp.ithome.com.tw/" target="_blank">iT 邦幫忙</a> 鐵人賽年度活動網站（切版、環境：laravel）</li>
-                        <li><a href="https://cyber.ithome.com.tw/" target="_blank">資安大會</a>官方網站 （設計、切版，環境：nuxt）</li>
-                        <li>其他研討會專案網站製作：Agile Summit, Modern Web, Kubernetes Summit, DevOps Summit, Cybersec101, 全國醫療資訊主管會議等研討會。（設計、切版、git 協同作業）</li>
+                            <a href="https://ithelp.ithome.com.tw/" target="_blank">iT 邦幫忙</a> 活動網站設計、切版，協同更新頁面</li>
+                        <li><a href="file_cybersec.html">資安大會</a>官方網站設計、切版、合作更新頁面</li>
+                        <li>其他研討會專案網站製作：Agile Summit, Modern Web, Kubernetes Summit, DevOps Summit, Cybersec 101, 全國醫療資訊主管會議等研討會（設計、切版、git 協同作業）</li>
+                        <li>webinar 影片系統，頁面設計、切版</li>
+                        <li>影片片庫系統，系統性設計、切版</li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-lg-4">
                     工作經歷：
                     <ul class="ul">
                         <li>
                             <a href="https://ithelp.ithome.com.tw/" target="_blank">iT 邦幫忙</a> / 網站視覺設計 4 年</li>
                         <li><a href="https://kyart.com.tw/" target="_blank">光沅數位創意</a> / 網站設計 3 年</li>
-                        <li><a href="http://www.wowmiss.com/" target="_blank">覓食國際餐飲</a> / 美術設計 1 年</li>
+                        <!-- <li><a href="http://www.wowmiss.com/" target="_blank">覓食國際餐飲</a> / 美術設計 1 年</li> -->
                     </ul>
                 </div>
             </div>
@@ -295,9 +333,9 @@
                         <ul class="ul">
                             <li>HTML & CSS</li>
                             <li>Jquery</li>
-                            <li>Scss</li>
+                            <li>Sass</li>
                             <li>Git flow</li>
-                            <li>Bootstrap</li>
+                            <li>Bootstrap 3 - 5</li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-3">
@@ -312,13 +350,13 @@
                     </div>
                     <div class="col-12 col-md-3">
                         <ul class="ul">
-                            <li>設計思考</li>
+                            <li>設計流程</li>
                             <li>視覺設計</li>
                             <li>插畫設計</li>
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-md-4 row justify-content-center">
+                <!-- <div class="col-12 col-lg-4 row justify-content-center">
                     <div class="col-12">
                         <h3 class="title">學習</h3>
                     </div>
