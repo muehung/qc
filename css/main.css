@@ -683,7 +683,7 @@ header.main {
 .section-skills {
   background: var(--bannerBgDark);
   /* background: linear-gradient(#8f5ba2,#735b7b); */
-  /* color: #fff; */
+  color: #fff;
 }
 
 
