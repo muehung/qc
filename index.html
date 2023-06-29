@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css?0527">
+    <link rel="stylesheet" type="text/css" href="css/kv.css">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -99,24 +100,19 @@
     </nav>
 
     <header class="main">
-        <div class="container">
-            <div class="main-txtbox">
-                <h2 class="main-title">
-                    <!-- <span class="zh">洪萱容</span> -->
-                    <span class="en">CHERYL HUNG</span> 
-                </h2>
-                <!-- <h2 class="til">
-                    創造專案價值，解決需求痛點
-                    嗨！您好👋 
-                </h2>
-                <h4 class="til">
-                    涉略程式觀念，共同達成預期成果
-                </h4>
-                <h4 class="til">
-                </h4> -->
+            <div class="kv-wrapper">
+                <div id="trianglesWrapper">
+                    <div id="triangles"></div>
+                    <div id="trianglesContent">
+                        <div id="triangleHeadings">
+                            <h1 id="heading" class="main-title"></h1>
+                            <p id="subheading" class="main-txtbox"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="social d-none">
+            <!-- <div class="social">
                 <ul class="social-list">
                     <li>
                         <a href="mailto:hung.co24@gmail.com" target="_blank">
@@ -129,7 +125,7 @@
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a href="https://hahow.in/@muriel000" target="_blank">
                             hahow
                         </a>
@@ -149,13 +145,11 @@
                         <a href="" target="_blank">
                             facebook
                         </a>
-                    </li> -->
+                    </li>
                     
                 </ul>
                 
-            </div>
-
-        </div>
+            </div> -->
         
     </header>
     <section class="section-files main" id="portfolio">
@@ -394,44 +388,8 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" async></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async></script>
-    <script>
-    // goTop button
-    $("body").append(
-        "<a href='#top' class='gotop' id='botton-gotop'><i class='fa fa-arrow-up'></i></a>"
-    );
-    var topBtn = $('.gotop');
-    topBtn.hide();
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        topBtn.fadeIn();
-      } else {
-        topBtn.fadeOut();
-      }
-    });
-    topBtn.click(function () {
-      $("html, body").animate({
-        scrollTop: 0
-      }, "slow");
-      return false;
-    });
-
-        // Navbar
-    $(function() {
-        // 下拉選單
-        $('#navDown').click(function(e) {
-            e.preventDefault();
-            $(this).next('.down-menu').toggleClass('downOpen');
-            $(this).toggleClass('rotateIcon');
-            return false;
-        });
-
-        // 小版選單
-        $('.hamburger').on('click',function(){
-            $(this).toggleClass('burgerCross');
-            $('#nav-xs').toggleClass('burgerOpen');
-        })
-    });
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/kv.js"></script>
 </body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBP88T8"

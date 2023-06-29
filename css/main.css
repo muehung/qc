@@ -11,14 +11,14 @@
   --linkHover: #1f1a3e;
   --themebg: #110f22;
   --bannerBgLight: #f5f2ff;
-  --bannerBgDark: #d9dbff;
+  --bannerBgDark: #483b60;
   --bgMainContent: #d9dbff;
 }
 
-* {
+/* * {
   padding: 0;
   margin: 0;
-}
+} */
 
 html {
   overflow-x: hidden;
@@ -505,7 +505,8 @@ section:last-of-type {
 
 /* header */
 header.main {
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  margin-bottom: -2%;
   text-align: center;
   /* background: url('../img/cover/main.jpg?0114') no-repeat center /cover; */
   background-color: var(--bannerBgLight);
@@ -523,20 +524,14 @@ header.main {
   font-family: 'Poppins';
   /* font-family: 'Roboto Mono', monospace,'Noto Sans TC', sans-serif; */
   margin: 0;
-  font-size: 10rem;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
 .main-title .en {
   letter-spacing: 2px;
 }
-.main-title .zh {
-  /* font-family: 'Noto Sans TC', sans-serif; */
-  white-space: nowrap;
-  font-size: 20px;
-  font-weight: 400;
-  margin-left: 10px;
-}
+
 /*
 .main-sub {
   color: #808080;
@@ -545,10 +540,8 @@ header.main {
 .main-txtbox {
   padding: 20px 0 0;
   color: var(--txtColorLight);
-}
-.main-txtbox .til {
-  margin-bottom: 10px;
-  font-weight: normal;
+  font-weight: 300;
+  font-size: 2rem;
 }
 
 .social {}

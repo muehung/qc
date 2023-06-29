@@ -1,0 +1,70 @@
+#trianglesContent {
+    position: absolute;
+    top: 0px;
+    color: white;
+    width: 100%;
+    margin: 5% auto 0;
+    pointer-events:none;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* #trianglesContent #heading{
+    flex-grow: 4;
+  }
+  #trianglesContent #subheading{
+    flex-grow: 1;
+  }
+  #trianglesContent #scrolldowntocontent {
+    flex-grow: 1;
+  } */
+  
+  #triangleHeadings {
+  }
+  
+  #trianglesContent #heading {
+    text-transform: uppercase;
+    height: 2em;
+  }
+  
+  #trianglesContent #subheading {
+    height: 3em;
+  }
+  
+  #trianglesContent #linkdown:after, #trianglesContent #heading:after, #trianglesContent #subheading:after {
+    content:"|";
+    font-weight: 100;
+    font-size: 2em;
+    opacity: 0;
+    line-height: 0px;
+  }
+  
+  #trianglesContent #linkdown.cursor:after, #trianglesContent #subheading.cursor:after, #trianglesContent #heading.cursor:after {
+    opacity: 1;
+    animation: blinker 1s infinite;
+  }
+  
+  #trianglesContent #linkdown {
+    font-weight: 400;
+  }
+  
+  @keyframes blinker {  
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    99% { opacity: 0; }
+  }
+  
+  #pagecontent {
+    height: 1200px;
+  }
+  
+  #scrolldowntocontent {
+    pointer-events:initial;
+    cursor: pointer;
+  }
