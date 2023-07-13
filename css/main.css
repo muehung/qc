@@ -524,8 +524,8 @@ header.main {
   font-family: 'Poppins';
   /* font-family: 'Roboto Mono', monospace,'Noto Sans TC', sans-serif; */
   margin: 0;
-  font-size: 3.2rem;
-  line-height: 1.1;
+  font-size: 2rem;
+  line-height: 1.6;
 }
 
 .main-title .en {
@@ -538,11 +538,23 @@ header.main {
 } */
 
 .main-txtbox {
-  padding: 20px 0 0;
   color: var(--txtColorLight);
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 3.2rem;
+    line-height: 1.1;
+  }
+  .main-txtbox {
+    padding: 20px 0 0;
+    font-size: 2rem;
+  }
+}
+
+
 
 .social {}
 .social .social-list {

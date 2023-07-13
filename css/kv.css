@@ -29,7 +29,7 @@
   
   #trianglesContent #heading {
     text-transform: uppercase;
-    height: 2em;
+    height: 4em;
   }
   
   #trianglesContent #subheading {
@@ -67,4 +67,14 @@
   #scrolldowntocontent {
     pointer-events:initial;
     cursor: pointer;
+  }
+
+
+
+
+
+  @media screen and (min-width: 768px) {
+    #trianglesContent #heading {
+      height: 2em;
+    }
   }
