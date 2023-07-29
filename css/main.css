@@ -585,6 +585,11 @@ header.main {
 .section-files.main {
   background-color: var(--bgMainContent);
 }
+
+.item-group {
+  margin-bottom: 7em;
+}
+
 .file-item {
   padding: 10px;
 }
@@ -895,10 +900,17 @@ footer {
 
 .title {
   text-align: center;
+  letter-spacing: -1px;
+  font-weight: 300;
+  margin-left: -3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
+.title i {
+  font-size: 60%;
+  color: var(--theme300)
+}
 
 
 
