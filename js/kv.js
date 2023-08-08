@@ -435,7 +435,7 @@ window.requestAnimFrame = (function() {
         // [remove, 1, "heading"],
         // [type, ", mukava kun tulit käymään!", "heading"],
         // [removeAll, 19, "heading"],
-        [type, "我是 Chrryl", "heading"],
+        [type, "我是 Cheryl", "heading"],
         [removeAll, 10, "subheading"],
         [type, "我在網站視覺設計著墨多年", "subheading"],
         [removeAll, 10, "subheading"],
