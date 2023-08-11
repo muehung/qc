@@ -101,7 +101,7 @@ window.requestAnimFrame = (function() {
     let hueDownLimit = 300;
     let hue = -85; // hue in the beginning
     let saturation = 20; // saturation
-    let brightness = 12 + 20 * w / 1000; // brightness
+    let brightness = 70; // brightness
     let dodge = scale * 4; // width of the mousebubble
     let dodgeP = 0.3; // height? of the mousebubble
     let escapeOnOff = 0; //mousebubble escaping if != 0

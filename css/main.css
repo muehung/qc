@@ -7,12 +7,15 @@
   --theme900: #250207;
   --txtColor: #222222;
   --txtColorLight: #ffffff;
-  --link: #9688cc;
-  --linkHover: #1f1a3e;
+  --navLink: #bebad0;
+  --navLinkHover: #a38ce4;
+  --innerLink: #bababa;
+  --innerLinkHover: #979797;
+  --link: #514486;
   --themebg: #110f22;
   --bannerBgLight: #f5f2ff;
-  --bannerBgDark: #483b60;
-  --bgMainContent: #d9dbff;
+  --bannerBgDark: #3e3b45;
+  --bgMainContent: #ebecf6;
 }
 
 /* * {
@@ -258,9 +261,26 @@ section:last-of-type {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /* background: linear-gradient(#ffffffcc 10%,#ffffff00 80%); */
-  background-color: var(--bannerBgLight);
+  background: linear-gradient(#574061 10%,#57406199 80%);
+  
 }
+
+.nav-content {
+  background: var(--bannerBgDark);
+}
+/* nav-main innerPage */
+.nav-content.nav-main .nav-list .nav-li .nav-li-a {
+  color: var(--innerLink);
+}
+.nav-content.nav-main .nav-list .nav-li .nav-li-a:hover,
+.nav-content.nav-main .nav-list .nav-li .nav-li-a:focus {
+  color: var(--innerLinkHover);
+}
+.nav-content.nav-main .nav-list .nav-li:active .nav-li-a {
+  color: var(--innerLinkHover);
+}
+/* nav-main innerPage */
+
 
 /* logo */
 .nav-main .nav-logo {
@@ -275,15 +295,16 @@ section:last-of-type {
 }
 
 .nav-main .nav-logo img {
-  width: 100%;
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   background-color: #fff;
 }
 
 /* 第一層 ul */
 .nav-main .nav-list {
   height: 100%;
-  flex: 1 1 75%;
+  /* flex: 1 1 75%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -299,6 +320,7 @@ section:last-of-type {
   box-shadow: 0 0 3px #26262642; */
   border-radius: 3px;
   margin: 0 5px;
+  transform-origin: center;
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
 }
@@ -313,17 +335,18 @@ section:last-of-type {
   align-items: center;
   height: 100%;
   /* border-bottom: 3px solid transparent; */
-  color: var(--link);
+  color: var(--navLink);
 }
 .nav-main .nav-list .nav-li .nav-li-a:hover,
 .nav-main .nav-list .nav-li .nav-li-a:focus {
-  color: var(--linkHover);
+  color: var(--navLinkHover);
 }
 .nav-main .nav-list .nav-li:active .nav-li-a {
   background-color: #efefef;
   color: var(--linkHover);
   border-bottom: 3px solid var(--theme500);
 }
+
 
 /* 第一層 li - 有下拉選單 */
 .nav-main .nav-list .nav-li.down-inside:hover {
@@ -506,12 +529,11 @@ section:last-of-type {
 /* header */
 header.main {
   /* margin-top: 80px; */
-  margin-bottom: -2%;
   text-align: center;
   /* background: url('../img/cover/main.jpg?0114') no-repeat center /cover; */
   background-color: var(--bannerBgLight);
   background: linear-gradient(180deg, var(--bannerBgLight) 30%, var(--bannerBgDark) 90%);
-  padding: 3% 0 0;
+  padding: 0;
   text-shadow: 0 0 10px var(--bannerBgDark);
 }
  
@@ -584,7 +606,22 @@ header.main {
 /* index portfolio */
 .section-files.main {
   background-color: var(--bgMainContent);
+  position: relative;
 }
+
+
+.section-files.main::after {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: url('../img/frame-top.png') no-repeat bottom center / cover;
+}
+
 
 .item-group {
   margin-top: 2em;
