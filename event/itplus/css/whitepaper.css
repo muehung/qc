@@ -1,0 +1,102 @@
+/**************
+ list page: whitepaper download
+**************/
+.sec-download-whitepaper {
+}
+
+
+.download-whitepaper-control {
+  background-color: #fff;
+  padding-bottom: 5%;
+}
+
+
+.download-whitepaper-content {}
+.whitepaper-item-group {
+  row-gap: 1rem;
+}
+.whitepaper-item {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: var(--borderRadius-s);
+  padding: 0;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.whitepaper-item figure {
+  padding: 0.5rem;
+  text-align: center;
+}
+.whitepaper-item figure img {
+  max-width: 150px;
+}
+.whitepaper-body {
+  padding: 0 0.5rem 0.5rem;
+}
+.whitepaper-txt {}
+.whitepaper-txt time {}
+.whitepaper-txt .til {
+  font-weight: 500;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.whitepaper-btnbox {
+  padding: 0.5rem 0 0;
+}
+.whitepaper-btnbox .btn {}
+.whitepaper-btnbox .btn i {}
+.btn-tooltipbox {
+}
+.btn-tooltipbox .btn {}
+.btn-tooltipbox .btn i {}
+.whitepaper-footer {
+  margin-top: auto;
+  border-top: 1px solid #eee;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.whitepaper-footer .btn-more {
+  display: block;
+  text-align: right;
+  background: #eee;
+  margin-top: 0.8rem;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  transition: .3s ease;
+}
+.whitepaper-footer .btn-more:hover, .whitepaper-footer .btn-more:focus {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+}
+.whitepaper-footer .btn-more i {}
+
+
+
+@media (max-width: 991px) {
+  .sec-download-whitepaper {
+  }
+  .download-whitepaper-control {
+    background-color: #fff;
+    padding-bottom: 5%;
+  }
+  .download-whitepaper-content {}
+  .whitepaper-item-group {}
+  .whitepaper-item {}
+  .whitepaper-item figure {}
+  .whitepaper-item figure img {}
+  .whitepaper-body {}
+  .whitepaper-txt {}
+  .whitepaper-txt time {}
+  .whitepaper-txt .til {}
+  .whitepaper-btnbox {}
+  .whitepaper-btnbox .btn {}
+  .whitepaper-btnbox .btn i {}
+  .btn-tooltipbox {
+  }
+  .btn-tooltipbox .btn {}
+  .btn-tooltipbox .btn i {}
+  .whitepaper-footer {}
+  .whitepaper-footer .btn-more {}
+  .whitepaper-footer .btn-more i {}
+}

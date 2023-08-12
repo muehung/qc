@@ -1,0 +1,12 @@
+/**************
+ list page: webinar-list
+**************/
+.sec-list.sec-webinar-list {
+  background-color: #fff;
+}
+
+/* webinar card */
+.card-webinar {
+}
+.card-webinar .card-thumbnail img {} 
+.card-webinar .card-content {}

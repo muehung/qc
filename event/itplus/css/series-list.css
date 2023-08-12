@@ -1,0 +1,42 @@
+/**************
+ list page: series-list
+**************/
+.sec-list.sec-series-list {
+  background-color: var(--bg01);
+}
+
+/* series card */
+.card-series {
+}
+.card-series:focus, .card-series:hover {
+}
+.card-series .card-thumbnail {
+}
+.card-series .card-thumbnail img {
+}
+
+.card-thumbnail .card-link {
+}
+.card-series:focus .card-link, .card-series:hover .card-link {
+}
+
+
+.card-thumbnail .card-link i {
+}
+
+.badge-calc-group {
+}
+.badge-calc-group .badge {
+}
+.badge-calc-group .num {
+}
+
+/* 卡片系列內容 */
+.card-series .card-content {
+}
+
+.card-content .series-txt {
+}
+
+.card-series-footer {
+}

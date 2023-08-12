@@ -1,0 +1,441 @@
+/**************
+    首頁 共用
+**************/
+.sec-index {
+  overflow: hidden;
+  z-index: 0;
+  background-color: #fff;
+}
+.sec-index .container, .sec-index .container-fluid {
+  z-index: 1;
+}
+.sec-index::before {}
+.sec-index::after {
+  z-index: -1;
+}
+
+.text-center .btn-lg {
+  border-radius: var(--borderRadius-m);
+  padding: 0.8rem 3rem;
+}
+/**************
+    首頁 共用
+**************/
+
+
+
+
+
+/**************
+    首頁 kv
+**************/
+/* index kv */
+.kv {
+  position: relative;
+  /* background-color: #000; */
+}
+.kv .kv-txt {
+  padding: 50px 10px 10px;
+}
+.kv .kv-txt .kv-title {
+  margin: 0;
+}
+.kv .kv-txt .kv-title .sub {
+}
+
+@media (max-width: 991px) {
+  .kv {
+    padding-top: 50px;
+  }
+}
+
+/**************
+    首頁 即將到來的線上研討會
+**************/
+.sec-webinar-coming {
+  /* background-color: var(--webinarBg);
+  background: var(--WebinarBgLinear); */
+  color: var(--webinarTxt);
+}
+.sec-webinar-coming::before {
+  content: '';
+  position: absolute;
+  bottom: -5%;
+  right: 2%;
+  background: url(../img/icon-rewind-2.png) no-repeat center / 100%;
+  opacity: 0.3;
+  width: 512px;
+  height: 512px;
+}
+.sec-webinar-coming::after {
+  content: 'Webinar';
+  position: absolute;
+  top: -1%;
+  left: -1%;
+  opacity: 0.4;
+  font-size: 16rem;
+  font-weight: 800;
+  font-family: var(--fontDecoEn);
+  letter-spacing: -0.5rem;
+  line-height: 1;
+  color:  var(--webinarBg);
+  max-width: 48%;
+}
+.sec-webinar-coming .title {
+  /* color: var(--webinarTxt) */
+}
+.sec-webinar-coming .title .light {
+  color: #ffbe00;
+}
+.webinar-box .card-link {
+  opacity: 0.9;
+}
+.webinar-box .card-link:hover, .webinar-box .card-link:focus {
+  opacity: 1;
+}
+.card-webinar {}
+.card-webinar .card-content {}
+
+.sec-webinar-coming .btn {
+  /* background-color: var(--webinarLightColor); */
+}
+.sec-webinar-coming .btn:hover, .sec-webinar-coming .btn:focus {
+  background-color: var(--theme);
+  border-color: #fff;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .sec-webinar-coming::before {
+    top: 0;    
+    width: 100px;
+    height: 100px;
+  }
+  .sec-webinar-coming::after {
+    font-size: 3.1rem;
+    letter-spacing: 0px;
+    max-width: max-content;
+    top: 0;
+  }
+}
+/**************
+    首頁 即將到來的線上研討會
+**************/
+
+
+
+
+
+/**************
+    首頁 熱門主題
+**************/
+.sec-topic {
+  background-color: #35558f;
+  background: linear-gradient(220deg, #3e60a0 0%, #35558f 20%, #1c376a 100%);
+}
+.sec-topic::before {
+  content: 'TOPIC';
+  position: absolute;
+  top: -2%;
+  right: 0%;
+  color: #4b6aa1;
+  font-size: 10rem;
+  font-weight: 800;
+  font-family: var(--fontDecoEn);
+  letter-spacing: -1px;
+}
+.sec-topic .title {
+  color: #fff;
+}
+.sec-topic .topic {
+  background-color: #4b6aa1;
+  border-color:#4b6aa1;
+  opacity: 0.8;
+}
+.sec-topic .topic:hover, .sec-topic .topic:focus {
+  background-color: #ffffffde;
+  opacity: 1;
+}
+.sec-topic .topic-link {
+  color: #fff;
+}
+.sec-topic .topic:hover .topic-link, .sec-topic .topic:focus .topic-link {
+  color: #4b6aa1;
+}
+
+@media (max-width: 767px) {
+  .sec-topic::before {
+    font-size: 3rem;
+  }
+}
+/**************
+    首頁 熱門主題
+**************/
+
+
+
+
+
+/**************
+    首頁 最新上架的隨選影片
+**************/
+.sec-vod {
+  /* background: var(--vodBgLinear); */
+  color: var(--vodColor);
+}
+.sec-vod::before {
+  content: '';
+  position: absolute;
+  top: 2%;
+  right: 0%;
+  background: url(../img/icon-vod-2.png) no-repeat center / 100%;
+  opacity: 0.3;
+  width: 512px;
+  height: 512px;
+}
+.sec-vod::after {
+  content: 'Video On Demand';
+  position: absolute;
+  bottom: -2%;
+  left: 0%;
+  opacity: 0.3;
+  font-size: 16rem;
+  font-weight: 800;
+  font-family: var(--fontDecoEn);
+  letter-spacing: -0.5rem;
+  line-height: 1;
+  color:  var(--vodLightColor);
+  max-width: 48%;
+}
+
+.sec-vod .titlebox {
+}
+.sec-vod .btn {
+  border-color: var(--vodLighterColor);
+  color: var(--vodLighterColor);
+  background-color: var(--vodDarkColor);
+}
+.sec-vod .btn:hover, .sec-vod .btn:focus {
+  background-color: var(--vodLighterColor);
+  color: var(--vodDarkColor);
+}
+
+.vod-box {}
+.vod-box .card-link {
+  opacity: 0.9;
+}
+.vod-box .card-link:hover, .vod-box .card-link:focus {
+  opacity: 1;
+}
+.card-vod {}
+.card-vod .card-content {}
+
+
+@media (max-width: 767px) {
+  .sec-vod::before {
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+  }
+  .sec-vod::after {
+    font-size: 3.1rem;
+    letter-spacing: 0px;
+    max-width: max-content;
+    bottom: 0;
+  }
+}
+/**************
+    首頁 最新上架的隨選影片
+**************/
+
+
+
+
+/**************
+    首頁 廣告 1400x198
+**************/
+.sec-fancy {
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+}
+.figure-fancy {
+  padding: 1%;
+  opacity: 0.9;
+}
+.figure-fancy:hover, .figure-fancy:focus {
+  opacity: 1;
+}
+/**************
+    首頁 廣告 1400x198
+**************/
+
+
+
+/**************
+    首頁 精選系列
+**************/
+.sec-series {
+  color: var(--theme);
+  /* padding: 5% 3% */
+}
+.sec-series::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  background: #ffffff url(../img/temp/demo-series-titlebox.png) no-repeat center top/cover;
+  width: 100%;
+  height: 100%;
+}
+.sec-series .titlebox {}
+
+.series-box {
+}
+.card-series {
+  border-color: var(--themeLight);
+  box-shadow: 0 0 0 1px var(--themeLight);
+}
+
+@media (max-width: 767px) {
+  .sec-series::before {
+    background-size: 100% 50%;
+  }
+}
+/**************
+    首頁 精選系列
+**************/
+
+
+
+
+
+
+/**************
+    首頁 精選頻道
+**************/
+.sec-channel {
+  /* background: var(--theme) url(../img/temp/demo-channel-bg.jpg) no-repeat center center /cover; */
+  /* background: var(--channelBgLinear); */
+  color: var(--channelColor);
+}
+.sec-channel::after {
+  content: 'Channel';
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  opacity: 0.8;
+  font-size: 18rem;
+  font-weight: 800;
+  font-family: var(--fontDecoEn);
+  letter-spacing: -0.5rem;
+  line-height: 1;
+  color: #dbf8ff;
+  max-width: 48%;
+}
+
+.sec-channel .btn {
+  color: var(--channelColor);
+}
+.sec-channel .btn:hover, .sec-channel .btn:focus {
+  color: var(--channelLightColor);
+}
+
+.swiper-corpartner {
+}
+.swiper-corpartner .swiper-wrapper {}
+.channel-item {
+  background-color: #fff;
+  border-color: var(--channelColor);
+  color: var(--channelColor);
+  text-align: center;
+  box-shadow: 0 3px 3px #00000055;
+  opacity: 0.9;
+}
+.channel-item:hover, .channel-item:focus {
+  opacity: 1;
+}
+.channel-item img {
+  background-color: #fff;  
+  width: 100%;
+}
+.swiper-corpartner .swiper-pagination {
+  top: unset;
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .sec-channel::after {
+    font-size: 6rem;
+    bottom: 0;
+    left: unset;
+    right: 0;
+    letter-spacing: 0;
+    max-width: max-content;
+    color: #34a1bc4d;
+  }
+}
+/**************
+    首頁 精選頻道
+**************/
+
+
+
+
+
+/**************
+    首頁 線上研討會精彩回顧
+**************/
+.sec-rewind {
+  /* background: var(--rewindBgLinear); */
+  background-color: var(--bg01);
+  color: var(--rewindColor);
+}
+.sec-rewind::before {
+  content: '';
+  position: absolute;
+  top: -3%;
+  right: -3%;
+  background: url(../img/icon-rewind-2.png) no-repeat center / 85%;
+  width: 512px;
+  height: 512px;
+  opacity: 0.3;
+}
+.sec-rewind::after {
+  content: 'rewind';
+  position: absolute;
+  bottom: -8%;
+  left: 0%;
+  opacity: 0.2;
+  font-size: 20rem;
+  font-weight: 800;
+  font-family: var(--fontDecoEn);
+  letter-spacing: -0.5rem;
+  line-height: 1;
+  color: var(--rewindColor);
+  max-width: 48%;
+}
+
+.sec-rewind .card-link {
+  /* background-color: #ddf1ff; */
+  opacity: 0.9;
+}
+.sec-rewind .card-link:hover, .sec-rewind .card-link:focus {
+  /* background-color: #fff; */
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .sec-rewind::before {
+    width: 100px;
+    height: 100px;
+    top: 0;
+  }
+  .sec-rewind::after {
+    font-size: 6rem;
+    letter-spacing: 0;
+    bottom: 0;
+  }
+}
+/**************
+    首頁 線上研討會精彩回顧
+**************/
