@@ -14,7 +14,7 @@
   --link: #514486;
   --themebg: #110f22;
   /* --bannerBgLight: #f5f2ff; */
-  --bannerBgLight: #fffbf2;
+  --bannerBgLight: #fdefde;
   --bannerBgDark: #3e3b45;
   --bgMainContent: #F2F0E9;
 }
@@ -612,6 +612,7 @@ header.main {
 .section-files.main {
   background-color: var(--bgMainContent);
   position: relative;
+  padding: 30px 0 10px;
 }
 
 
