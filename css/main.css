@@ -341,7 +341,7 @@ section:last-of-type {
   text-align: center;
   /* background-color: #fff;
   box-shadow: 0 0 3px #26262642; */
-  border-radius: 3px;
+  /* border-radius: 3px; */
   margin: 0 5px;
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
@@ -513,8 +513,8 @@ section:last-of-type {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     width: 100%;
-    border-top: 1px solid #0a090d;
-    background-color: #3d354f;
+    border-top: 1px solid #dbd1f4;
+    background-color: #f3f0fb;
   }
   .nav-main .nav-list .nav-li:hover {
     -webkit-transform: translateY(0px);
