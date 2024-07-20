@@ -271,7 +271,7 @@ section:last-of-type {
 }
 /* nav-main innerPage */
 .nav-content.nav-main .nav-list .nav-li .nav-li-a {
-  color: var(--innerLink);
+  color: #cacaca;
 }
 .nav-content.nav-main .nav-list .nav-li .nav-li-a:hover,
 .nav-content.nav-main .nav-list .nav-li .nav-li-a:focus {
@@ -454,9 +454,9 @@ section:last-of-type {
     background-color: #f3f3f3;
   }
 
-  .nav-main .nav-list .nav-li .nav-li-a {
+  .nav-content.nav-main .nav-list .nav-li .nav-li-a {
     flex-basis: 100%;
-    color: #333;
+    color: var(--navLink);
   }
 
   .nav-main .hamburger {
