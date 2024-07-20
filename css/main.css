@@ -13,9 +13,10 @@
   --innerLinkHover: #979797;
   --link: #514486;
   --themebg: #110f22;
-  --bannerBgLight: #f5f2ff;
+  /* --bannerBgLight: #f5f2ff; */
+  --bannerBgLight: #f0ede3;
   --bannerBgDark: #3e3b45;
-  --bgMainContent: #ebecf6;
+  --bgMainContent: #F2F0E9;
 }
 
 /* * {
