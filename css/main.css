@@ -550,7 +550,7 @@ header.main {
   font-size: 36px;
   line-height: 1;
   letter-spacing: 5px;
-  color: #7205bb;
+  color: #906bd3;
 }
 
 .main-title .en {
@@ -572,6 +572,7 @@ header.main {
   .main-title {
     font-size: 3.2rem;
     line-height: 1.1;
+    letter-spacing: 46px;
   }
   .main-txtbox {
     padding: 20px 0 0;
