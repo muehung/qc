@@ -368,7 +368,7 @@ section:last-of-type {
           align-items: center;
   height: 100%;
   /* border-bottom: 3px solid transparent; */
-  color: #eadfff;
+  color: #a5a5a5;
 }
 .nav-main .nav-list .nav-li .nav-li-a:hover,
 .nav-main .nav-list .nav-li .nav-li-a:focus {
