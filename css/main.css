@@ -10,7 +10,7 @@
   --navLink: #6c30d8;
   --navLinkHover: #a38ce4;
   --innerLink: #bababa;
-  --innerLinkHover: #979797;
+  --innerLinkHover: #cfb6fd;
   --link: #514486;
   --themebg: #110f22;
   /* --bannerBgLight: #f5f2ff; */
@@ -285,7 +285,7 @@ section:last-of-type {
 }
 /* nav-main innerPage */
 .nav-content.nav-main .nav-list .nav-li .nav-li-a {
-  color: #cacaca;
+  color: #decbff;
 }
 .nav-content.nav-main .nav-list .nav-li .nav-li-a:hover,
 .nav-content.nav-main .nav-list .nav-li .nav-li-a:focus {
@@ -489,6 +489,7 @@ section:last-of-type {
             justify-content: space-between;
     width: 100%;
     height: unset;
+    margin-top: 80px;
     position: absolute;
     -webkit-box-shadow: 0 3px 0 #0a090d;
             box-shadow: 0 3px 0 #0a090d;
@@ -506,7 +507,6 @@ section:last-of-type {
     -webkit-transform: translateX(0) !important;
         -ms-transform: translateX(0) !important;
             transform: translateX(0) !important;
-    top: 80px;
   }
 
   .nav-main .nav-list .nav-li {
