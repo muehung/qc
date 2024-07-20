@@ -516,6 +516,11 @@ section:last-of-type {
     border-top: 1px solid #0a090d;
     background-color: #3d354f;
   }
+  .nav-main .nav-list .nav-li:hover {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+        transform: translateY(0px);
+  }
 
   .nav-content.nav-main .nav-list .nav-li .nav-li-a {
     -ms-flex-preferred-size: 100%;
