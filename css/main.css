@@ -546,8 +546,8 @@ header.main {
   font-family: 'Poppins';
   /* font-family: 'Roboto Mono', monospace,'Noto Sans TC', sans-serif; */
   margin: 0;
-  font-size: 2rem;
-  line-height: 1.6;
+  font-size: 46px;
+  line-height: 1;
 }
 
 .main-title .en {
@@ -613,12 +613,12 @@ header.main {
 .section-files.main::after {
   content: '';
   position: absolute;
-  top: -60px;
+  top: -180px;
   right: 0;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 200px;
   background: url('../img/frame-top.svg') no-repeat bottom center / cover;
 }
 
