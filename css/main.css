@@ -525,7 +525,7 @@ section:last-of-type {
   .nav-content.nav-main .nav-list .nav-li .nav-li-a {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    color: var(--navLink);
+    color: #ccafff;
   }
 
   .nav-main .hamburger {
