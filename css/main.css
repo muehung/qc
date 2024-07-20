@@ -744,7 +744,9 @@ header.main {
   /* background: linear-gradient(#8f5ba2,#735b7b); */
   color: #fff;
 }
-
+.section-skills .title {
+  color: #fff;
+}
 
 
 /* index blog */
