@@ -450,8 +450,8 @@ section:last-of-type {
   .nav-main .nav-list .nav-li {
     flex-basis: 100%;
     width: 100%;
-    border-top: 1px solid #aaa;
-    background-color: #f9f1ff;
+    border-top: 1px solid #cdcdcd;
+    background-color: #f3f3f3;
   }
 
   .nav-main .nav-list .nav-li .nav-li-a {
