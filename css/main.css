@@ -368,16 +368,16 @@ section:last-of-type {
           align-items: center;
   height: 100%;
   /* border-bottom: 3px solid transparent; */
-  color: var(--navLink);
+  color: #eadfff;
 }
 .nav-main .nav-list .nav-li .nav-li-a:hover,
 .nav-main .nav-list .nav-li .nav-li-a:focus {
   color: var(--navLinkHover);
 }
 .nav-main .nav-list .nav-li:active .nav-li-a {
-  background-color: #efefef;
+  /* background-color: #efefef; */
   color: var(--linkHover);
-  border-bottom: 3px solid var(--theme500);
+  /* border-bottom: 3px solid var(--theme500); */
 }
 
 
