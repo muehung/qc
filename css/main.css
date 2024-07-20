@@ -532,7 +532,7 @@ header.main {
   /* margin-top: 80px; */
   text-align: center;
   background-color: var(--bannerBgLight);
-  background: linear-gradient(180deg, var(--bannerBgLight) 30%, #dec5ec 90%);
+  background: linear-gradient(180deg, var(--bannerBgLight) 30%, #ebd9f5 90%);
   padding: 0;
   text-shadow: 0 0 40px #ffffff;
 }
@@ -547,8 +547,9 @@ header.main {
   /* font-family: 'Roboto Mono', monospace,'Noto Sans TC', sans-serif; */
   margin: 0;
   padding: 200px 0;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 1;
+  letter-spacing: 5px;
 }
 
 .main-title .en {
