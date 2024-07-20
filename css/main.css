@@ -15,7 +15,7 @@
   --themebg: #110f22;
   /* --bannerBgLight: #f5f2ff; */
   --bannerBgLight: #fdefde;
-  --bannerBgDark: #3e3b45;
+  --bannerBgDark: #261845;
   --bgMainContent: #F2F0E9;
 }
 
@@ -37,7 +37,7 @@ body {
   line-height: 1.8;
   overflow: hidden;
   color: var(--theme900);
-  /* background-color: var(--themebg); */
+  background-color: var(--themebg);
 }
 @media (max-width: 768px) {
   body {
@@ -167,6 +167,7 @@ footer {
 section {
   padding: 5% 0%;
   margin: 0;
+  background-color: #fffbf5;
 }
 @media screen and (max-width: 767px) {
   h1 {
@@ -435,7 +436,7 @@ section:last-of-type {
     width: 100%;
     height: unset;
     position: absolute;
-    box-shadow: 0 3px 0 #aaa;
+    box-shadow: 0 3px 0 #0a090d;
     background-color: #fff;
     transition: 0.3s ease-in;
     transform: translateX(-200%);
@@ -450,8 +451,8 @@ section:last-of-type {
   .nav-main .nav-list .nav-li {
     flex-basis: 100%;
     width: 100%;
-    border-top: 1px solid #cdcdcd;
-    background-color: #f3f3f3;
+    border-top: 1px solid #0a090d;
+    background-color: #3d354f;
   }
 
   .nav-content.nav-main .nav-list .nav-li .nav-li-a {
