@@ -864,7 +864,9 @@ header.main {
   background-color: #ebe3ff;
   font-size: 1.1rem;
 }
-
+.about-text p {
+  font-size: 1.1rem;
+}
 
 
 /* index skill */
