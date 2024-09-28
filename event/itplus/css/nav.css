@@ -332,8 +332,8 @@ ul {
     border-radius: 5px 0px 0px 5px;
     flex-basis: 80%;
     height: 80%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 .nav-form-search .search-input:focus {
     outline-width: 0px;
@@ -342,8 +342,8 @@ ul {
 .nav-form-search .search-click {
     flex-basis: 20%;
     height: 80%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
     display: inline-block;
     background-color: #008fd1;
     color: #fff;
