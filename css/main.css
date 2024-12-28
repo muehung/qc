@@ -379,7 +379,11 @@ section:last-of-type {
   color: var(--linkHover);
   /* border-bottom: 3px solid var(--theme500); */
 }
-
+.nav-main .nav-list .nav-li .nav-li-a i {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+}
 
 /* 第一層 li - 有下拉選單 */
 .nav-main .nav-list .nav-li.down-inside:hover {
@@ -610,12 +614,7 @@ section:last-of-type {
 
 /* header */
 header.main {
-  /* margin-top: 80px;
-  text-align: center; */
-  /* background-color: var(--bannerBgLight);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fffbf5), to(#c3eeeb));
-  background: -o-linear-gradient(top, #fffbf5 40%, #c3eeeb 100%);
-  background: linear-gradient(180deg, #fffbf5 40%, #c3eeeb 100%); */
+  position: relative;
   background-color: var(--bannerBgLight);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--bannerBgDark)), to(#c3eeeb));
   background: -o-linear-gradient(top, var(--bannerBgDark) 40%, var(--bannerBgLight) 100%);
@@ -623,6 +622,17 @@ header.main {
   padding: 100px 50px 200px;
   /* text-shadow: 1px 1px 5px var(--bannerBgDark); */
   color: #ffffff;
+}
+header.main::after {
+  content: '';
+  position: absolute;
+  bottom: 220px;
+  right: 0;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 240px;
+  background: url('../img/frame-top.svg?0720') no-repeat top center / cover;
 }
 .kv-wrapper {
   max-width: 1000px;
@@ -718,19 +728,6 @@ header.main {
   background-color: var(--bgMainContent);
   position: relative;
   padding: 30px 0 10px;
-}
-
-
-.section-files.main::after {
-  content: '';
-  position: absolute;
-  top: -220px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 240px;
-  background: url('../img/frame-top.svg?0720') no-repeat top center / cover;
 }
 
 
@@ -910,7 +907,7 @@ header.main {
 footer {
   width: 100%;
   padding: 1% 0;
-  background-color: var(--txtColor);
+  background-color: #2f2645;
   color: #777;
   text-align: center;
 }
