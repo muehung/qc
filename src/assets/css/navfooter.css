@@ -1,0 +1,427 @@
+/***********
+  Nav start 
+ ***********/
+.nav-main {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 80px;
+  padding: 0px 20px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* background: var(--bannerBgDark); */
+}
+
+.nav-content {
+  background: var(--bannerBgDark);
+}
+/* nav-main innerPage */
+.nav-content.nav-main .nav-list .nav-li .nav-li-a {
+  color: var(--navLink);
+}
+.nav-content.nav-main .nav-list .nav-li .nav-li-a:hover,
+.nav-content.nav-main .nav-list .nav-li .nav-li-a:focus {
+  color: var(--innerLinkHover);
+}
+.nav-content.nav-main .nav-list .nav-li:active .nav-li-a {
+  color: var(--innerLinkHover);
+}
+/* nav-main innerPage */
+
+
+/* logo */
+.nav-main .nav-logo {
+  /* flex: 0 0 15%; */
+  height: 100%;
+  line-height: 4.5;
+}
+
+.nav-main .nav-logo a {
+  display: block;
+  width: 100%;
+}
+
+.nav-main .nav-logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.nav-main .nav-logo::before {
+  content: '';
+  /* background: linear-gradient(to bottom,  #2f2645 0%, transparent 100%); */
+  width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 80px 80px 0 0;
+   border-color: #2f2645 transparent transparent transparent;
+   transform: rotate(0deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100px;
+  height: 100px; */
+  z-index: -1;
+}
+
+/* 第一層 ul */
+.nav-main .nav-list {
+  height: 100%;
+  /* flex: 1 1 75%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+/* 第一層 li */
+.nav-main .nav-list .nav-li {
+  /* height: 70px; */
+  position: relative;
+  text-align: center;
+  /* background-color: #fff;
+  box-shadow: 0 0 3px #26262642; */
+  /* border-radius: 3px; */
+  margin: 0 5px;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+      transform: translateY(0px);
+}
+.nav-main .nav-list .nav-li:hover {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+      transform: translateY(2px);
+}
+.nav-main .nav-list .nav-li .nav-li-a {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+  border-radius: 3px;
+  color: var(--navLink);
+  background-color: #413362b2;
+}
+.nav-main .nav-list .nav-li .nav-li-a:hover,
+.nav-main .nav-list .nav-li .nav-li-a:focus {
+  color: var(--navLinkHover);
+  background-color: #ffffff;
+}
+.nav-main .nav-list .nav-li:active .nav-li-a {
+  /* background-color: #efefef; */
+  color: var(--linkHover);
+  /* border-bottom: 3px solid var(--theme500); */
+}
+.nav-main .nav-list .nav-li .nav-li-a i {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+/* 第一層 li - 有下拉選單 */
+.nav-main .nav-list .nav-li.down-inside:hover {
+}
+
+/* 第一層 a - 有下拉選單 */
+.nav-main .nav-list .nav-li.down-inside > .nav-li-a {
+  position: relative;
+}
+
+.nav-main .nav-list .nav-li.down-inside > .nav-li-a::after {
+  content: ">";
+  -webkit-transform: rotate(90deg) scaleY(1.2);
+      -ms-transform: rotate(90deg) scaleY(1.2);
+          transform: rotate(90deg) scaleY(1.2);
+  display: inline-block;
+  margin-left: 0.4rem;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.nav-main .nav-list .nav-li.down-inside > .nav-li-a.rotateIcon::after {
+  -webkit-transform: rotate(270deg) scaleY(1.2);
+      -ms-transform: rotate(270deg) scaleY(1.2);
+          transform: rotate(270deg) scaleY(1.2);
+}
+
+/* 第一層 a - 特別底色 */
+.nav-main .nav-list .nav-li .nav-li-a.special {
+  background-color: var(--theme500);
+}
+
+.nav-main .nav-list .nav-li .nav-li-a.special:hover {
+  background-color: var(--theme700);
+}
+
+/* 第一層 li - 內有下拉選單 */
+/* 第二層選單 */
+.nav-main .nav-list .nav-li.down-inside .down-menu {
+  /* display: none; */
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  background-color: #555;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  /* transform: translateX(-200%); */
+}
+
+.nav-main .nav-list .nav-li.down-inside .down-menu.downOpen {
+  height: auto;
+  -webkit-box-shadow: inset 0px 5px 3px var(--theme900);
+          box-shadow: inset 0px 5px 3px var(--theme900);
+  overflow: hidden;
+}
+
+/* 第二層選單的 ul */
+.nav-main .nav-list .nav-li.down-inside .nav-list.down {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* 第二層選單的 li */
+.nav-main .nav-list .nav-li.down-inside .nav-list.down .nav-li {
+  width: 100%;
+  text-align: center;
+  border-top: 0.5px solid #000;
+  background-color: #555;
+}
+
+/* 第二層選單的 a */
+.nav-main .nav-list .nav-li.down-inside .nav-list.down .nav-li .nav-li-a:hover {
+  background-color: var(--theme700);
+}
+
+@media (max-width: 992px) {
+  .nav-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+  }
+
+  .nav-main .nav-logo::before {
+    content: none;
+  }
+
+  .nav-main > .nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: unset;
+    margin-top: 80px;
+    position: absolute;
+    -webkit-box-shadow: 0 3px 0 #0a090d;
+            box-shadow: 0 3px 0 #0a090d;
+    background-color: var(--bannerBgDark);
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    -webkit-transform: translateX(-200%);
+        -ms-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+
+  /* 漢堡選單打開 */
+  .burgerOpen {
+    -webkit-transform: translateX(0) !important;
+        -ms-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+  }
+
+  .nav-main .nav-list .nav-li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    /* border-top: 1px solid var(--bannerBgLight); */
+    background-color: var(--bannerBgDark);
+  }
+  .nav-main .nav-list .nav-li:hover {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+        transform: translateY(0px);
+  }
+
+  .nav-content.nav-main .nav-list .nav-li .nav-li-a {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    color: #ccafff;
+  }
+
+  .nav-main .hamburger {
+    padding: 0px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    outline: 0px;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    z-index: 999;
+  }
+
+  .nav-main .hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    /* transform: translateY(50%); */
+  }
+
+  .nav-main .hamburger span:nth-child(1) {
+    top: 20%;
+  }
+
+  .nav-main .hamburger span:nth-child(2) {
+    top: 50%;
+    opacity: 1;
+  }
+
+  .nav-main .hamburger span:nth-child(3) {
+    top: 80%;
+  }
+
+  .nav-main .hamburger.burgerCross span:nth-child(1) {
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  .nav-main .hamburger.burgerCross span:nth-child(2) {
+    width: 0px;
+    opacity: 0;
+  }
+
+  .nav-main .hamburger.burgerCross span:nth-child(3) {
+    top: 50%;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  .nav-main .nav-list .nav-li.down-inside .down-menu {
+    width: 100%;
+    position: relative;
+  }
+
+  .nav-main .nav-list .nav-li.down-inside > .nav-li-a {
+    padding-left: 2em;
+    z-index: 1;
+  }
+
+  .nav-main .nav-list .nav-li.down-inside .nav-list.down .nav-li {
+    background-color: var(--theme700);
+  }
+
+  .nav-main .nav-list .nav-li.down-inside .nav-list.down .nav-li:nth-child(1) {
+    -webkit-box-shadow: inset 0px 7px 2px 0px var(--theme900);
+            box-shadow: inset 0px 7px 2px 0px var(--theme900);
+  }
+}
+
+
+/***********
+  Nav end
+ ***********/
+
+
+
+
+
+ /***********
+  Footer start
+ ***********/
+footer {
+  width: 100%;
+  padding: 1% 0;
+  background-color: #2f2645;
+  color: #777;
+  text-align: center;
+}
+
+
+.footer-go-top {
+  width: 100%;
+  background-color: var(--bannerBgDark);
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 45px;
+}
+.footer-go-top a {
+  max-width: 300px;
+  border-radius: 8px;
+  margin: auto;
+  background-color: #5f4f85;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.footer-go-top a:hover,
+.footer-go-top a:focus {
+  background-color: #4f4071;
+}
+ /***********
+  Footer end
+ ***********/
