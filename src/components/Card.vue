@@ -15,7 +15,8 @@ const props = defineProps({
 </script>
 <template>
     <div class="file-item">
-        <a :href="props.enName" class="file-link">
+        <!-- <a :href="props.enName" class="file-link"> -->
+        <RouterLink :to="props.enName">
             <div class="file-cover">
                 <img :src="props.coverImg" loading="lazy" class="img">
             </div>
@@ -36,6 +37,6 @@ const props = defineProps({
                 
                 <div class="info-date">{{ props.infoDate }}</div>
             </div>
-        </a>
+        </RouterLink>
     </div>
 </template>
