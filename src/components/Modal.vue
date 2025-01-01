@@ -23,8 +23,6 @@ const props = defineProps({
 
 onMounted(()=>{
   modalImgSrc.value = props.imgSrc;
-  console.log("imgSrc", props.imgSrc)
-  console.log("modalImgSrc", modalImgSrc.value)  
 })
 
 </script>

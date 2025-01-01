@@ -7,7 +7,6 @@ import Card from './../components/Card.vue'
 const store = useStore();
 const list = ref(store.portfolio);
 
-console.log("list",list.value[0].coverImg)
 </script>
 <template>
     <div>

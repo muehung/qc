@@ -4,7 +4,7 @@ import modal from './Modal.vue';
 import { ithomeLogoPath, itplusSitemap, itplusFigmaWork, itplusComponent } from '../helper/assets';
 // const images = import.meta.glob("@/assets/img/**/*", { eager: true });
 
-import mwImg from "@/assets/img/cover/mw2021.jpg";
+// import mwImg from "@/assets/img/cover/mw2021.jpg";
  onMounted(()=>{
     const imgSrc = ref(null);
     const imgTitle = ref(null);
@@ -12,7 +12,6 @@ import mwImg from "@/assets/img/cover/mw2021.jpg";
 
     provide("currentImage" , {imgSrc, imgTitle, imgId});
 
-    console.log('mwImg:' + mwImg );
 
  })
 </script>
