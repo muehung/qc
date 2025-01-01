@@ -16,22 +16,19 @@
         </a>
         <ul class="nav-list" id="nav-xs">
             <li class="nav-li">
-                <a href="/#about" class="nav-li-a">
-                    關於我 
-                    <!-- <i class="fas fa-angle-down"></i> -->
-                </a>
+                <RouterLink :to="{ path: '/', hash: '#about' }" class="nav-li-a">關於我 </RouterLink>
             </li>
             <li class="nav-li">
-                <a href="/#portfolio" class="nav-li-a">
+                <!-- <a href="#portfolio" class="nav-li-a">
                     專案 
-                    <!-- <i class="fas fa-angle-down"></i> -->
-                </a>
+                </a> -->
+                <RouterLink :to="{ path: '/', hash: '#portfolio' }" class="nav-li-a">專案 </RouterLink>
             </li>
             <li class="nav-li">
-                <a href="/#skills" class="nav-li-a">
+                <!-- <a href="#skills" class="nav-li-a">
                     技能 
-                    <!-- <i class="fas fa-angle-down"></i> -->
-                </a>
+                </a> -->
+                <RouterLink :to="{ path: '/', hash: '#skills' }" class="nav-li-a">技能 </RouterLink>
             </li>
         </ul>
     </nav>
