@@ -33,6 +33,10 @@ const router = createRouter({
       component: () => import("../components/PageItplusView.vue"),
     },
     { 
+      path: "/pcschool",
+      component: () => import("../components/PagePcschoolView.vue"),
+    },
+    { 
         path: '/:pathmatch(.*)*', name: 'NotFound', component: NotFound
     },
   ],

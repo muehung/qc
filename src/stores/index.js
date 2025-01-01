@@ -4,14 +4,26 @@ import { ref } from "vue";
 // new URL("/src/assets/img/cover/cyber2022.jpg", import.meta.url).href,
 import cyberImg from "@/assets/img/cover/cyber2022.jpg";
 import mwImg from "@/assets/img/cover/mw2021.jpg";
-import ironmanImg from "@/assets/img/cover/ironman2021.jpg";
+// import ironmanImg from "@/assets/img/cover/ironman2021.jpg";
 import itplusImg from "@/assets/img/cover/itplus.jpg";
 import ithomeLogo from "@/assets/img/corp/ithome.png";
+import pcschoolImg from "@/assets/img/cover/pcschool.jpg";
+import gjunLogo from "@/assets/img/corp/gjun.png";
 
 
 const caseList = [
   {
     id: "01",
+    enName: "pcschool",
+    coverImg: pcschoolImg,
+    logo: gjunLogo,
+    webType: "形象網站",
+    tag: ["設計", "切版"],
+    head: "巨匠電腦官網",
+    infoDate: "2023 - 2025",
+  },
+  {
+    id: "02",
     enName: "cybersec",
     coverImg: cyberImg,
     logo: ithomeLogo,
