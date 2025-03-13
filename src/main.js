@@ -1,9 +1,9 @@
 import { createApp } from 'vue';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@/assets/css/main.css';
-import '@/assets/css/navfooter.css';
-import '@/assets/css/animate.css';
+import '@/assets/css/main.css?20250313';
+import '@/assets/css/navfooter.css?20250313';
+import '@/assets/css/animate.css?20250313';
 import App from './App.vue';
 import router from './router';
 import { createPinia } from 'pinia';
