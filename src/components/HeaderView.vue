@@ -2,7 +2,9 @@
 import jQuery from 'jquery';
 import { onMounted } from 'vue';
 const $ = jQuery;
-
+import kvDecoJSON from './../assets/kv-deco.json';
+import kvWaveJSON from './../assets/kv-wave.json'
+import { Vue3Lottie } from 'vue3-lottie';
 
 onMounted(()=>{
         // Navbar
@@ -25,11 +27,14 @@ onMounted(()=>{
 </script>
 <template>
     <header class="main">
-        <Vue3Lottie animation-link="src/assets/kv-wave.json" class="lottie-wave"/>
-        <div class="kv-wrapper">
+        <!-- <Vue3Lottie animation-link="kvWave.json" class="lottie-wave"/> -->
+        <!-- <Vue3Lottie :animationData="kvWaveJSON" :height="2000" :width="300" :class="lottie-kv-deco" /> -->
+        <Vue3Lottie :animationData="kvWaveJSON" class="lottie-wave"/>
+        <div class="kv-wrapper" :class="lottie-kv-deco">
             <div class="row justify-content-center align-items-center">
                 <div class="col-10 col-sm-8 col-md-6">
-                    <Vue3Lottie animation-link="src/assets/kv-deco.json" class="lottie-kv-deco"/>
+                    <!-- <Vue3Lottie animation-link="src/assets/kv-deco.json" class="lottie-kv-deco"/> -->
+                    <Vue3Lottie :animationData="kvDecoJSON" class="lottie-kv-deco" />
                 </div>
                 <div class="col-10 col-sm-8 col-md-6">
                     <h1 class="main-title">I'm Cheryl.</h1>

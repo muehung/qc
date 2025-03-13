@@ -7,7 +7,7 @@ import '@/assets/css/animate.css?20250313';
 import App from './App.vue';
 import router from './router';
 import { createPinia } from 'pinia';
-import Vue3Lottie from 'vue3-lottie'
+import { Vue3Lottie } from 'vue3-lottie'
 
 const pinia = createPinia();
 
