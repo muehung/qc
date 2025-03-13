@@ -1,0 +1,31 @@
+.lottie-wave {
+    max-width: 100%;
+    max-height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+}
+
+.lottie-kv-deco {
+    margin-top: -10% !important;
+    padding-bottom: 12%;
+    /* width: 60% !important; */
+}
+.lottie-kv-deco svg {}
+.lottie-kv-deco svg path {
+    stroke: #d3c0fe;
+}
+
+
+@media screen and (min-width: 992px) {
+    .lottie-wave {}
+    .lottie-kv-deco {
+        margin-top: -12% !important;
+        padding-bottom: 36%;
+    }
+    .lottie-kv-deco svg {}
+    .lottie-kv-deco svg path {
+        stroke: #d3c0fe;
+    }
+}

@@ -261,11 +261,11 @@ header.main {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, var(--bannerBgDark)), to(#c3eeeb));
   background: -o-linear-gradient(top, var(--bannerBgDark) 40%, var(--bannerBgLight) 100%);
   background: linear-gradient(180deg, var(--bannerBgDark) 40%, var(--bannerBgLight) 100%);
-  padding: 100px 50px 200px;
+  padding: 20px 20px 50px;
   /* text-shadow: 1px 1px 5px var(--bannerBgDark); */
   color: #ffffff;
 }
-header.main::after {
+/* header.main::after {
   content: '';
   position: absolute;
   bottom: 220px;
@@ -275,7 +275,7 @@ header.main::after {
   width: 100%;
   height: 240px;
   background: url('../img/frame-top.svg?0720') no-repeat top center / cover;
-}
+} */
 .kv-wrapper {
   max-width: 1000px;
   margin: auto;
@@ -317,6 +317,9 @@ header.main::after {
 }
 
 @media screen and (min-width: 768px) {
+  header.main {
+    padding: 20px 20px 20px;
+  }
   .main-title {
     font-size: 2.4rem;
     padding: 10px 0;
@@ -367,7 +370,7 @@ header.main::after {
 
 /* index portfolio */
 .section-files.main {
-  background-color: var(--bgMainContent);
+  background-color: #ffffff;
   position: relative;
   padding: 30px 0 10px;
 }
@@ -457,8 +460,8 @@ header.main::after {
 .file-info .head {
   color: var(--txtColor);
   margin: 10px 0;
-  height: 60px;
-  overflow: hidden;
+  /* height: 60px;
+  overflow: hidden; */
 }
 .info-corp {
   display: -ms-flexbox;
