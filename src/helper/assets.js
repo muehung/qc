@@ -11,6 +11,17 @@ const pcschoolTop = new URL('@/assets/img/files/pcschool-top.jpg', import.meta.u
 const pcschoolMd = new URL('@/assets/img/files/pcschool-md.jpg', import.meta.url).href;
 const pcschoolBottom = new URL('@/assets/img/files/pcschool-bottom.jpg', import.meta.url).href;
 
+const pcschoolOthersPages = [
+    "src/assets/img/files/pcschool-other/it-course01.png",
+    "src/assets/img/files/pcschool-other/design-course01.png",
+    "src/assets/img/files/pcschool-other/gov-subsidies01.png",
+    "src/assets/img/files/pcschool-other/branch04.png",
+    "src/assets/img/files/pcschool-other/branch05.png",
+    "src/assets/img/files/pcschool-other/branch03.png",
+    "src/assets/img/files/pcschool-other/branch02.png",
+    "src/assets/img/files/pcschool-other/branch01.png"
+  ];
+  
 export {
     ithomeLogoPath,
     itplusSitemap,
@@ -19,5 +30,6 @@ export {
     gjunLogoPath,
     pcschoolTop,
     pcschoolMd,
-    pcschoolBottom
+    pcschoolBottom,
+    pcschoolOthersPages
 };

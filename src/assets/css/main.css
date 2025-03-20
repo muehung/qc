@@ -748,14 +748,18 @@ header.main {
 /* file page */
 .section-file.kv {
   padding: 0;
-  color: #fff;
+  /* color: #fff; */
   position: relative;
-  height: 330px;
+  background-attachment: fixed;
   /* margin-top: 80px; */
-  padding-top: 160px;
+  /* padding-top: 160px; */
 }
+.section-file.kv .bg {
+  background-attachment: fixed;
+}
+
 .section-file.kv .file-kv-content {
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 /* cybersec */
@@ -763,12 +767,6 @@ header.main {
   width: 100%;
   height: 300px;
   background: url('../img/cover/cyber2022.jpg') no-repeat top center / cover;
-  background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 .section-file.kv.cybersec .file-kv-content {
   background: -webkit-gradient(linear,left top, left bottom,from(#00012fcc),color-stop(50%, #00012f00),color-stop(80%, #00012f));
@@ -785,20 +783,14 @@ header.main {
   width: 100%;
   height: 300px;
   background: url('../img/cover/itplus.jpg') no-repeat top center / cover;
-  background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 .section-file.kv.itplus .file-kv-content {
   background: -webkit-gradient(linear, left top, left bottom, from(#003859bf), color-stop(80%, #003859bf));
   background: -o-linear-gradient(#003859bf 0%, #003859bf 80%);
   background: linear-gradient(#003859bf 0%, #003859bf 80%);
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  top: 0;
+  top: 0; */
   width: 100%;
 }
 
@@ -807,12 +799,6 @@ header.main {
   width: 100%;
   height: 300px;
   background: url('../img/cover/mw2021.jpg') no-repeat top center / cover;
-  background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 .section-file.kv.mw .file-kv-content {
   background: -webkit-gradient(linear,left top, left bottom,from(#2f0b82),color-stop(50%, #ffffff00),color-stop(80%, #2f0b82));
@@ -829,12 +815,6 @@ header.main {
   width: 100%;
   height: 300px;
   background: url('../img/cover/ironman2021.jpg') no-repeat top center / cover;
-  background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 .section-file.kv.ironman .file-kv-content {
   background: -webkit-gradient(linear, left top, left bottom, from(#478e9ccc), color-stop(50%, #1f5964c4),color-stop(80%, #186371));
@@ -877,8 +857,6 @@ header.main {
 
 .section-file.list {
   padding-top: 0;
-  margin-top: -30px;
-  min-height: 80vh;
 }
 .year-tabbox {
   border-bottom-width: 0px;
@@ -962,18 +940,10 @@ header.main {
   height: 300px;
   background: url('../img/cover/pcschool.jpg') no-repeat top center / cover;
   background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  background-size: 100%;
 }
 .section-file.kv.pcschool .file-kv-content {
-  background: -webkit-gradient(linear, left top, left bottom, from(#478e9ccc), color-stop(50%, #00000066),color-stop(80%, #ffffff55));
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#478e9ccc), color-stop(50%, #00000066),color-stop(80%, #ffffff55));
   background: -o-linear-gradient(#00000066 0%, #252525c4 50%,#000000c2 80%);
-  background: linear-gradient(#00000066 0%, #252525c4 50%,#000000c2 80%);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  width: 100%;
+  background: linear-gradient(#00000066 0%, #252525c4 50%,#000000c2 80%); */
 }
