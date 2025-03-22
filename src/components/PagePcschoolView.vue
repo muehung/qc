@@ -1,18 +1,17 @@
 <script setup>
-import { gjunLogoPath } from '../helper/assets';
 import { pcschoolOthersPages } from '../helper/assets';
 import { onMounted, ref, provide } from 'vue';
 import pcschoolImage from '@/assets/img/files/pcschool.png';
 import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
-// import laptopImage from '@/assets/img/laptop.png';
+
+const pcschoolOthersLocal = ref(pcschoolOthersPages);
 
  onMounted(()=>{
     const imgSrc = ref(null);
     const imgTitle = ref(null);
     const imgId = ref(null);
-
+    
     provide("currentImage" , {imgSrc, imgTitle, imgId});
-
 
  })
 </script>
@@ -50,7 +49,7 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
                     </div>
                     <div class="info-item">
                     <h3 class="info-title">Tools</h3>
-                    <p class="info-content">Figma, PS, AI, VSCode, Github</p>
+                    <p class="info-content">Figma, PS, AI, VSCode, Github, Bootstrap5</p>
                     </div>
                     <div class="info-item">
                     <h3 class="info-title">Team</h3>
@@ -66,7 +65,7 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
     
         <!-- Timeline Section -->
         <section class="timeline-section">
-            <div class="container">
+            <!-- <div class="container"> -->
                 <div class="timeline-container">
                     <div class="timeline-item">
                     <div class="timeline-number">1</div>
@@ -93,7 +92,7 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
                     </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
     
         <!-- Overview Section -->
@@ -179,14 +178,16 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
             </div>
         </section>
         <section class="section-wireframe2">
-            <div class="container">
+            <div class="container-fliud">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <img src="@/assets/img/files/pcschool-step2-wireframe.png" alt="Competitor wireframe" class="wireframe-image" />
                     </div>
-                    <div class="col-12 col-md-6">
-                        <h3 class="subsection-title">同業Wireframe</h3>
-                        <p class="section-text">搭配同業官網分析討論,溝通確認整體資訊架構。</p>
+                    <div class="col-12 col-md-6 py-4">
+                        <div class="wireframe2-subtext">
+                            <h3 class="subsection-title">同業Wireframe</h3>
+                            <p class="section-text">搭配同業官網分析討論,溝通確認整體資訊架構。</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -194,11 +195,11 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
     
         <!-- Mockup Section -->
         <section class="mockup-section">
-        <div class="container">
-            <h2 class="section-title">Mockup</h2>
+        
+            <h2 class="section-title text-center">Mockup</h2>
             <div class="mockup-container">
                 <div class="row justify-content-center mockup-row mockup-row-main">
-                    <div class="col-11 col-lg-8">
+                    <div class="col-11 col-md-9 col-lg-8">
                         <div class="mockup-item">
                             <img src="@/assets/img/files/pcschool-step3-mockup.png" alt="Website mockup 1" class="mockup-image" />
                         </div>
@@ -206,18 +207,28 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
                 </div>
                 <div class="mockup-row">
                     <div class="mockup-grid">
-                    <div class="mockup-grid-item" v-for="n in pcschoolOthersPages" :key="n">
-                        <img :src="n" alt="Website mockup grid" class="mockup-grid-image" />
-                    </div>
+                        <div class="mockup-grid-item" v-for="n in pcschoolOthersLocal" :key="n">
+                            <img :src="n" alt="Website mockup grid" class="mockup-grid-image" />
+                        </div>
                     </div>
                 </div>
                 <div class="mockup-caption">
-                    <p class="section-text">
-                    配合與網站企劃依據後台數據的比重,以及多年經驗,所畫出的草圖,我再設計規劃與討論。依據公司推動業務重要性與順序,重新翻新整體頁面。
-                    </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3 class="section-title">
+                                    與網站企劃配合
+                                </h3>    
+                                <p>
+                                    他依據後台數據比重、以及對人、課程資訊等經驗,所畫出的草圖。
+                                    我再設計規劃與討論。依據公司推動業務重要性與順序,重新翻新整體頁面。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        
         </section>
     
         <!-- Learnings Section -->
@@ -252,35 +263,37 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
         font-family: 'Noto Sans TC', sans-serif;
         color: #333;
         line-height: 1.6;
-        padding-left: 15px;
-        padding-right: 15px;
       }
       
       /* Hero Section */
       .hero-section {
         display: flex;
         flex-direction: column;
-        padding: 4rem 2rem;
-        background: linear-gradient(to bottom, #e6e6e6, #f5f5f5);
+        padding: 2rem 2rem;
+        background: linear-gradient(to bottom, #ffffff, #fff1f1);
         position: relative;
+      }
+
+      .hero-content {
+        flex: 1;
       }
       
       @media (min-width: 768px) {
         .hero-section {
           flex-direction: row;
           align-items: center;
+          padding: 4rem 2rem;
           justify-content: space-between;
         }
-      }
-      
-      .hero-content {
-        flex: 1;
+        .hero-content {
+            margin-top: 20%;
+          }
       }
       
       .hero-title {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         font-weight: 700;
-        color: #8b2e2e;
+        color: #b55b5b;
         margin-bottom: 1rem;
         line-height: 1.2;
       }
@@ -318,7 +331,7 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
         margin: auto;
         border-radius: 10px;
         border: 5px solid #000;
-        aspect-ratio: 16 / 12;
+        aspect-ratio: 16 / 10;
         width: 100%;
         overflow: scroll;
         z-index: 1;
@@ -397,10 +410,12 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
       /* Timeline Section */
       .timeline-section {
         padding: 3rem 2rem;
-        background-color: #f5f5f5;
+        background-color: #343434;
+        color: #fff;
       }
       
       .timeline-container {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
@@ -413,12 +428,25 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
           flex-direction: row;
           justify-content: space-between;
         }
+        .timeline-container::before {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 100%;
+          background-color: #7b7b7b;
+          position: absolute;
+          left: 0%;
+          top: 50%;
+        }
       }
       
       .timeline-item {
         display: flex;
         align-items: flex-start;
         gap: 1rem;
+        position: relative;
+        background-color: #343434;
+        padding: 0 1.2rem;
       }
       
       .timeline-number {
@@ -427,9 +455,10 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
         justify-content: center;
         width: 2rem;
         height: 2rem;
-        background-color: #e0e0e0;
+        background-color: #7b7b7b;
         border-radius: 50%;
         font-weight: 600;
+        color: #343434;
       }
       
       .timeline-content {
@@ -437,7 +466,6 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
       }
       
       .timeline-text {
-        color: #555;
       }
       
       /* Section Styles */
@@ -497,7 +525,17 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
         background-color: #fff;
       }
 
-      .section-wireframe2 {}
+      .section-wireframe2 {
+        padding: 0;
+      }
+
+      .wireframe2-subtext {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
       
       .wireframe-container {
         margin-top: 2rem;
@@ -553,7 +591,7 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
       
       /* Mockup Section */
       .mockup-section {
-        padding: 4rem 2rem;
+        padding: 6rem 0rem 0rem;
         background-color: #f5f5f5;
       }
       
@@ -566,6 +604,7 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
         flex-direction: column;
         gap: 2rem;
         margin-bottom: 2rem;
+        padding: 1rem 3rem;
       }
       
       @media (min-width: 768px) {
@@ -606,22 +645,38 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
       .mockup-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 1rem 2rem;
         max-width: 100%;
+        margin-top: -8%;
       }
       
       @media (min-width: 768px) {
         .mockup-grid {
+        gap: 3rem;
           grid-template-columns: repeat(4, 1fr);
+          margin-top: -12%;
         }
       }
       
       .mockup-grid-item {
+        border: 3px solid #fff;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         border-radius: 4px;
         display: block;
-        aspect-ratio: 2/3;
+        aspect-ratio: 16/10;
         overflow: scroll;
+        transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+      }
+
+      @media (min-width: 768px) {
+        .mockup-grid-item {
+            border: 3px solid #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            
+        }
       }
       
       .mockup-grid-image {
@@ -631,8 +686,9 @@ import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
       }
       
       .mockup-caption {
-        margin-top: 2rem;
+        padding: 3rem 0;
       }
+      .mockup-caption .section-title {}
       
       /* Learnings Section */
       .learnings-section {
