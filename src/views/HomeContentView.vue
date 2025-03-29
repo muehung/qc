@@ -33,9 +33,9 @@ const list = ref(store.portfolio);
                         <h3 class="til mt-0">關於我</h3>
                     </div>
                     <div class="col-10 mb-3 about-text">
-                        <p>從平面、品牌設計起步，隨著對網頁設計的興趣加深，開始自學並在一家網頁設計公司發展技能。後來，加入 IT 媒體公司，深入了解工程師專業術語，擴展視野。</p>
+                        <p>從平面、品牌設計起步，隨著對網頁設計的興趣加深，開始自學並在一家網頁設計公司發展技能。後來，加入 IT 媒體公司，深入了解工程師專業術語，擴展視野，目前在教育品牌公司，協助官方網站改版迭代。</p>
                         <p class="mb-5">
-                            熱衷於前端技術，學習 JavaScript、jQuery 和暴力班切版課程，並修讀 Vue.js 課程。也參加了 UX 讀書會，並將「UX三刀流」的學習實踐於工作，進一步提升我的設計與技術能力。
+                            資訊焦慮促使學習趨勢上的技術，JavaScript、jQuery、切版課程、Vue.js 課程。也參加了 UX 讀書會，AI工具逐步應用，進一步提升我的設計與技術能力。
                         </p>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -49,7 +49,7 @@ const list = ref(store.portfolio);
                     <div class="col-12 col-lg-5">
                         <h4 class="til mt-0">經歷</h4>
                         <ul class="ul">
-                            <li>2023 ~ 至今 : 巨匠電腦</li>
+                            <li>2023 ~ 至今 : <a href="https://www.pcschool.com.tw/" target="_blank">巨匠電腦</a></li>
                             <li>
                                 2018 ~ 2023 : 網站視覺設計 / <a href="https://www.ithome.com.tw/" target="_blank">iThome</a></li>
                             <li>2014 ~ 2017 : 網站設計 / <a href="https://www.kyart.com.tw" target="_blank">光沅數位創意</a></li>
