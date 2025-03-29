@@ -1,7 +1,13 @@
 <script setup>
 import { onBeforeMount, onMounted, provide, ref } from 'vue';
 import modal from './Modal.vue';
-import { ithomeLogoPath, itplusSitemap, itplusFigmaWork, itplusComponent } from '../helper/assets';
+import { ithomeLogoPath, itplusSitemap, itplusFigmaWork, itplusComponent } 
+from '../helper/assets';
+import itplusVod from '@/assets/img/files/itplus-vod.jpg';
+import itplusWebinar from '@/assets/img/files/itplus-webinar.jpg';
+import itplusSeries from '@/assets/img/files/itplus-series.jpg';
+import itplusRewind from '@/assets/img/files/itplis-rewind.jpg';
+
 // const images = import.meta.glob("@/assets/img/**/*", { eager: true });
 
 // import mwImg from "@/assets/img/cover/mw2021.jpg";
@@ -21,12 +27,11 @@ import { ithomeLogoPath, itplusSitemap, itplusFigmaWork, itplusComponent } from 
         <div class="file-kv-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 col-md-2">
+                    <!-- <div class="col-8 col-md-2">
                         <div class="imgbox file-pic">
-                            <!-- <img src="../assets/img/corp/ithome.png" alt="" class="img logo"> -->
                              <img :src="ithomeLogoPath" alt="" class="img logo">
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-12 col-md-9 offset-md-1 file-intro">
                         <ul class="intro-list row">
                             <li class="col-12 col-md-6 intro-li">
@@ -35,7 +40,7 @@ import { ithomeLogoPath, itplusSitemap, itplusFigmaWork, itplusComponent } from 
                             </li>
                             <li class="col-12 col-md-6 intro-li">
                                 <span>負責角色</span>
-                                設計師
+                                前端設計師
                             </li>
                             <li class="col-12 col-md-6 intro-li">
                                 <span>類型</span>
@@ -54,26 +59,15 @@ import { ithomeLogoPath, itplusSitemap, itplusFigmaWork, itplusComponent } from 
 
 
     <section class="section-file list">
+        <div class="container-fluid bg-dark text-white">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 py-5">
+                    <h1 class="page-title">面對未知需求，利用元件模組化，達成彈性拆裝，建構像積木般的影音平台</h1>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12">
-                    <ul class="nav justify-content-center nav-pills  nav-tabs year-tabbox" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#tabSitemap" role="tab"
-                                aria-controls="tabSitemap" aria-selected="false">說明 & sitemap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tabWorking" role="tab"
-                                aria-controls="tabWorking" aria-selected="false">Figma 工作現場示意圖 ＆ 元件示意圖</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="event/itplus/index-static.html" class="nav-link" target="_blank">切版 <i class="fas fa-external-link-alt"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://itplus.ithome.com.tw/ " class="nav-link" target="_blank">上線版 <i class="fas fa-external-link-alt"></i></a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="col-12 col-md-8 tab-content-outer">
                     <div class="tab-content file-tab-content">
                         <div class="tab-pane content2021 fade show active" id="tabSitemap" role="tabpanel"
@@ -87,7 +81,7 @@ import { ithomeLogoPath, itplusSitemap, itplusFigmaWork, itplusComponent } from 
                             </div>
                             <div class="row tab-row">
                                 <div class="col-2 tabLabel">團隊成員</div>
-                                <div class="col-10 tabAnswer">主管、企劃、設計師、前端工程師、後端工程師</div>
+                                <div class="col-10 tabAnswer">主管、企劃、前端設計師、前端工程師、後端工程師</div>
                             </div>
                             <div class="row tab-row">
                                 <div class="col-2 tabLabel">專案背景</div>
@@ -105,72 +99,100 @@ import { ithomeLogoPath, itplusSitemap, itplusFigmaWork, itplusComponent } from 
                                 <div class="col-2 tabLabel">挑戰</div>
                                 <div class="col-10 tabAnswer">
                                     <ul class="ul">
-                                        <li>尚未有 logo 風格</li>
-                                        <li>尚有未知、時間趕、頁面功能複雜</li>
+                                        <li>沒有 logo、風格，只知道大概方向</li>
+                                        <li>還有許多未知資訊、時間趕、頁面功能複雜</li>
                                         <li>第一次做前台系統的設計與切版</li>
-                                        <li>wireframe, 流程圖已由企劃生成，需與企劃確認可行性</li>
+                                        <li>wireframe, 流程圖已由企劃生成（需與企劃確認可行性）</li>
                                     </ul>
                                 </div>
                             </div>
                             
                             <div class="row tab-row">
-                                <div class="col-2 tabLabel">團隊解法</div>
+                                <div class="col-2 tabLabel">我的解法</div>
                                 <div class="col-10 tabAnswer"> 
                                     <ol>
-                                        <li>企劃規劃網站架構，與前後端溝通。</li>
-                                        <li>設計師微調版面與流程，與 企劃商量。</li>
-                                        <li>設計師切版，微調。</li>
-                                        <li>前端、後端工程師同時進行。</li>
+                                        <li>與企劃討論，確認版面與流程。</li>
+                                        <li>設計、切版、前端、後端工程師同時進行。</li>
                                         <li>滾動式更新版面。</li>
                                     </ol>
                                 </div>
                             </div>
 
                             <div class="row tab-row">
-                                <div class="col-2 tabLabel">總結</div>
+                                <div class="col-2 tabLabel">學習</div>
                                 <div class="col-10 tabAnswer"> 
-                                    <p>這次時間很趕，在還不知道許多細節像是logo、首頁要放什麼，只能無中生有的先提供首頁，切版用元件的方式套入網站，滾動式調整。</p>
+                                    <p>面對時間緊急，不知道logo、首頁要放什麼，只能無中生有的先提供首頁，切版用元件的方式套入網站，滾動式調整。</p>
                                 </div>
                             </div>
 
                             <h2 class="year">Sitemap
                             </h2>
                             <div class="file-imgbox">
-                                
                                 <modal :img-src="itplusSitemap" img-title="itplus" img-id="itplus" class="img-fluid" />
-
-                                <p class="text-note mt-3">2023.8.12 updated</p>
+        
+                                <!-- <p class="text-note mt-3">2023.8.12 updated</p> -->
                             </div>
-
+                            
                         </div>
-                        <div class="tab-pane fade" id="tabWorking" role="tabpanel" aria-labelledby="tabWorking">
-                            <h2 class="year">
-                                Figma 工作現場示意圖 ＆ 元件示意圖
-                            </h2>
-
-                            <a class="text-light" href="event/itplus/ui_system.html" target="_blank">
-                                元件頁
-                            </a>
-                            <div class="file-imgbox">
-                                <!-- <a href="../assets/img/files/itplus-figmaworking.png" target="_blank">
-                                    <img src="../assets/img/files/itplus-figmaworking.png" alt="" class="img"loading="lazy"style="border:2px solid #aaa;">
-                                </a> -->
-                                <modal :img-src="itplusFigmaWork" img-title="itplus Frigma" img-id="itplus02" class="img-fluid" />
-
-                                <p class="text-note mt-3">2023.8.12 updated</p>
-
-                                <!-- <a href="../assets/img/files/itplus-component.png" target="_blank">
-                                    <img src="../assets/img/files/itplus-component.png" alt="" class="img"loading="lazy" style="border:2px solid #aaa;">
-                                </a> -->
-                                <modal :img-src="itplusComponent" img-title="itplus component" img-id="itplus03" class="img-fluid" />
-
-                                <p class="text-note mt-3">2023.8.12 updated</p>
-                            </div>
-                        </div>
+                        <!-- <div class="tab-pane fade" id="tabWorking" role="tabpanel" aria-labelledby="tabWorking">
+                            
+                        </div> -->
                         
                     </div>
 
                 </div>
+
+                <div class="col-12 py-5">
+                    <div class="file-imgbox">
+                        <h2>針對 4種不同影片，列出所有狀態</h2>
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <modal :img-src="itplusVod" img-title="itplus" img-id="itplus04" class="img-fluid" />
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <modal :img-src="itplusWebinar" img-title="itplus" img-id="itplus05" class="img-fluid" />
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <modal :img-src="itplusSeries" img-title="itplus" img-id="itplus06" class="img-fluid" />
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <modal :img-src="itplusRewind" img-title="itplus" img-id="itplus07" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <h2 class="year">
+                        元件
+                    </h2>
+                    <div class="file-imgbox">
+                        <modal :img-src="itplusComponent" img-title="itplus component" img-id="itplus03" class="img-fluid" />
+                        <a class="btn btn-default" href="event/itplus/ui_system.html" target="_blank">
+                            元件頁
+                        </a>
+                        <!-- <p class="text-note mt-3">2023.8.12 updated</p> -->
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <ul class="nav justify-content-center nav-pills  nav-tabs year-tabbox" role="tablist">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#tabSitemap" role="tab"
+                                aria-controls="tabSitemap" aria-selected="false">說明 & sitemap</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tabWorking" role="tab"
+                                aria-controls="tabWorking" aria-selected="false">元件示意圖</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="event/itplus/index-static.html" class="nav-link" target="_blank">切版 <i class="fas fa-external-link-alt"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://itplus.ithome.com.tw/ " class="nav-link" target="_blank">上線版 <i class="fas fa-external-link-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>

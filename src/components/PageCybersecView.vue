@@ -26,7 +26,7 @@
                             </li>
                             <li class="col-12 col-md-6 intro-li">
                                 <span>經歷時間</span>
-                                2018 - 2022
+                                2018 - 2022 每年活動
                             </li>
                         </ul>
                     </div>
@@ -42,31 +42,28 @@
                 <div class="col-12">
                     <ul class="nav justify-content-center nav-pills  nav-tabs year-tabbox" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#tabContent2022" role="tab"
-                                aria-controls="tabContent2022" aria-selected="false">2022年度</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tabContent2021" role="tab"
-                                aria-controls="tabContent2021" aria-selected="false">2021年度</a>
+                            <a class="nav-link active" data-bs-toggle="tab" href="#tabContent2019" role="tab"
+                                aria-controls="tabContent2019" aria-selected="false">2019年度</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="tab" href="#tabContent2020" role="tab"
                                 aria-controls="tabContent2020" aria-selected="false">2020年度</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tabContent2019" role="tab"
-                                aria-controls="tabContent2019" aria-selected="false">2019年度</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tabContent2021" role="tab"
+                                aria-controls="tabContent2021" aria-selected="false">2021年度</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tabContent2022" role="tab"
+                                aria-controls="tabContent2022" aria-selected="false">2022年度</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-8 tab-content-outer">
                     <div class="tab-content file-tab-content">
-                        <div class="tab-pane content2022 fade show active" id="tabContent2022" role="tabpanel"
+                        <div class="tab-pane content2022 fade" id="tabContent2022" role="tabpanel"
                             aria-labelledby="tabContent2022">
                             <h2 class="year">2022年度
-                                <a href="https://cyber.ithome.com.tw/2022/" class="btn btn-file" target="_blank">
-                                    線上觀看
-                                </a>
                             </h2> 
                             <div class="row tab-row">
                                 <div class="col-2 tabLabel">時間</div>
@@ -79,7 +76,7 @@
                                 </div>
                             </div>
                             <div class="row tab-row">
-                                <div class="col-2 tabLabel">資訊露出</div>
+                                <div class="col-2 tabLabel">活動順序</div>
                                 <div class="col-10 tabAnswer">
                                     徵稿 -> 宣傳版 -> 完整版 -> 會後版 
                                 </div>
@@ -113,15 +110,21 @@
                             </div>
 
                             <div class="file-imgbox">
-                                <img src="./../assets/img/files/cyber2022_01.jpg" alt="" class="img" loading="lazy">
-                                <img src="./../assets/img/files/cyber2022_03.jpg" alt="" class="img" loading="lazy">
-                                <img src="./../assets/img/files/cyber2022_04.jpg" alt="" class="img" loading="lazy">
-                                <img src="./../assets/img/files/cyber2022_05.jpg" alt="" class="img" loading="lazy">
-                                <img src="./../assets/img/files/cyber2022_06.jpg" alt="" class="img" loading="lazy">
-                                <img src="./../assets/img/files/cyber2022_08.jpg" alt="" class="img" loading="lazy">
-                                <img src="./../assets/img/files/cyber2022_09.jpg" alt="" class="img" loading="lazy">
-                                <img src="./../assets/img/files/cyber2022_10.jpg" alt="" class="img" loading="lazy">
-                                <img src="./../assets/img/files/cyber2022_11.jpg" alt="" class="img" loading="lazy">
+                                <figure>
+                                    <img src="./../assets/img/files/cyber2022_01.jpg" alt="" class="img" loading="lazy">
+                                    <img src="./../assets/img/files/cyber2022_03.jpg" alt="" class="img" loading="lazy">
+                                    <img src="./../assets/img/files/cyber2022_04.jpg" alt="" class="img" loading="lazy">
+                                    <img src="./../assets/img/files/cyber2022_05.jpg" alt="" class="img" loading="lazy">
+                                    <img src="./../assets/img/files/cyber2022_06.jpg" alt="" class="img" loading="lazy">
+                                    <img src="./../assets/img/files/cyber2022_08.jpg" alt="" class="img" loading="lazy">
+                                    <img src="./../assets/img/files/cyber2022_09.jpg" alt="" class="img" loading="lazy">
+                                    <img src="./../assets/img/files/cyber2022_10.jpg" alt="" class="img" loading="lazy">
+                                    <img src="./../assets/img/files/cyber2022_11.jpg" alt="" class="img" loading="lazy">
+                                </figure>
+
+                                <a href="https://cyber.ithome.com.tw/2022/" class="btn btn-default btn-file" target="_blank">
+                                    線上觀看
+                                </a>
 
                                 <p class="text-note mt-3">2023.01.14 updated</p>
                             </div>
@@ -129,9 +132,6 @@
                         </div>
                         <div class="tab-pane fade" id="tabContent2021" role="tabpanel" aria-labelledby="tabContent2021">
                             <h2 class="year">2021年度
-                                <a href="https://cyber.ithome.com.tw/2021/" class="btn btn-file" target="_blank">
-                                    線上觀看
-                                </a>
                             </h2>
                             <div class="row tab-row">
                                 <div class="col-2 tabLabel">時間</div>
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="row tab-row">
-                                <div class="col-2 tabLabel">資訊露出</div>
+                                <div class="col-2 tabLabel">活動順序</div>
                                 <div class="col-10 tabAnswer">
                                     徵稿 -> 宣傳版 -> 完整版 -> 會後版 
                                 </div>
@@ -180,7 +180,8 @@
                             </div>
 
                             <div class="file-imgbox">
-                                <img src="./../assets/img/files/cyber2021_01.jpg" alt="" class="img"loading="lazy">
+                                <figure>
+<img src="./../assets/img/files/cyber2021_01.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2021_02.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2021_03.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2021_04.jpg" alt="" class="img"loading="lazy">
@@ -189,6 +190,12 @@
                                 <img src="./../assets/img/files/cyber2021_07.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2021_08.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2021_09.jpg" alt="" class="img"loading="lazy">
+                                </figure>
+                                
+
+                                <a href="https://cyber.ithome.com.tw/2021/" class="btn btn-default btn-file" target="_blank">
+                                    線上觀看
+                                </a>
 
                                 <p class="text-note mt-3">2023.01.14 updated</p>
                             </div>
@@ -196,23 +203,20 @@
                         </div>
                         <div class="tab-pane fade" id="tabContent2020" role="tabpanel" aria-labelledby="tabContent2020">
                             <h2 class="year">2020年度
-                                <a href="https://cyber.ithome.com.tw/2020/" class="btn btn-file" target="_blank">
-                                    線上觀看
-                                </a>
                             </h2>
                             <div class="row tab-row">
                                 <div class="col-2 tabLabel">時間</div>
                                 <div class="col-10 tabAnswer">
-                                    <!-- 2019/11 call for speaker 徵稿網頁
+                                    2019/11 call for speaker 徵稿網頁
                                     <br>2020/12 - 2020/1 原訂第一版宣傳網站上線，因疫情推遲
                                     <br>2020/2 第一版宣傳網站上線，開始報名
                                     <br>2020/2 - 2020/3 每二週更新ㄧ版
                                     <br>2020/3 - 2020/4 會前資訊上線
-                                    <br>2020/5 - 2020/6 會後資訊上線 -->
+                                    <br>2020/5 - 2020/6 會後資訊上線
                                 </div>
                             </div>
                             <div class="row tab-row">
-                                <div class="col-2 tabLabel">資訊露出</div>
+                                <div class="col-2 tabLabel">活動順序</div>
                                 <div class="col-10 tabAnswer">
                                     徵稿 -> 宣傳版 -> 完整版
                                 </div>
@@ -247,7 +251,8 @@
                             </div>
 
                             <div class="file-imgbox">
-                                <img src="./../assets/img/files/cyber2020_01.jpg" alt="" class="img"loading="lazy">
+                                <figure>
+<img src="./../assets/img/files/cyber2020_01.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2020_02.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2020_03.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2020_04.jpg" alt="" class="img"loading="lazy">
@@ -257,15 +262,19 @@
                                 <img src="./../assets/img/files/cyber2020_08.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2020_09.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2020_10.jpg" alt="" class="img"loading="lazy">
+                                </figure>
+                                
+                                
+
+                                <a href="https://cyber.ithome.com.tw/2020/" class="btn btn-default btn-file" target="_blank">
+                                    線上觀看
+                                </a>
 
                                 <p class="text-note mt-3">2023.01.14 updated</p>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tabContent2019" role="tabpanel" aria-labelledby="tabContent2019">
+                        <div class="tab-pane fade show active" id="tabContent2019" role="tabpanel" aria-labelledby="tabContent2019">
                             <h2 class="year">2019年度
-                                <a href="https://cyber.ithome.com.tw/2019/" class="btn btn-file" target="_blank">
-                                    線上觀看
-                                </a>
                             </h2>
                             <div class="row tab-row">
                                 <div class="col-2 tabLabel">時間</div>
@@ -276,7 +285,7 @@
                                 </div>
                             </div>
                             <!-- <div class="row tab-row">
-                                <div class="col-2 tabLabel">資訊露出</div>
+                                <div class="col-2 tabLabel">活動順序</div>
                                 <div class="col-10 tabAnswer">
                                     徵稿 -> 宣傳版 -> 完整版
                                 </div>
@@ -309,7 +318,8 @@
                             </div>
 
                             <div class="file-imgbox">
-                                <img src="./../assets/img/files/cyber2019_01.jpg" alt="" class="img"loading="lazy">
+                                <figure>
+<img src="./../assets/img/files/cyber2019_01.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2019_02.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2019_03.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2019_04.jpg" alt="" class="img"loading="lazy">
@@ -317,6 +327,11 @@
                                 <img src="./../assets/img/files/cyber2019_06.jpg" alt="" class="img"loading="lazy">
                                 <img src="./../assets/img/files/cyber2019_07.jpg" alt="" class="img"loading="lazy">
 
+                                </figure>
+                                <a href="https://cyber.ithome.com.tw/2019/" class="btn btn-default btn-file" target="_blank">
+                                    線上觀看
+                                </a>
+                                
                                 <p class="text-note mt-3">2023.01.14 updated</p>
                             </div>
                         </div>

@@ -45,21 +45,22 @@
                             <a class="nav-link active" data-bs-toggle="tab" href="#tabContent2022" role="tab"
                                 aria-controls="tabContent2022" aria-selected="false">2022</a>
                         </li> -->
+                        
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tabContent2021" role="tab"
-                                aria-controls="tabContent2021" aria-selected="false">2021</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tabContent2020" role="tab"
-                                aria-controls="tabContent2020" aria-selected="false">2020</a>
+                            <a class="nav-link active" data-bs-toggle="tab" href="#tabContent2018" role="tab"
+                                aria-controls="tabContent2018" aria-selected="true">2018</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="tab" href="#tabContent2019" role="tab"
                                 aria-controls="tabContent2019" aria-selected="false">2019</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#tabContent2018" role="tab"
-                                aria-controls="tabContent2018" aria-selected="true">2018</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#tabContent2020" role="tab"
+                                aria-controls="tabContent2020" aria-selected="false">2020</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tabContent2021" role="tab"
+                                aria-controls="tabContent2021" aria-selected="false">2021</a>
                         </li>
                     </ul>
                 </div>
@@ -99,7 +100,7 @@
                             </div>
 
                             <div class="file-imgbox">
-                                <img src="../assets/img/files/mw2021_01.jpg" alt="" class="img"loading="lazy">
+                                <figure><img src="../assets/img/files/mw2021_01.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2021_02.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2021_03.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2021_04.jpg" alt="" class="img"loading="lazy">
@@ -107,7 +108,8 @@
                                 <img src="../assets/img/files/mw2021_06.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2021_07.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2021_08.jpg" alt="" class="img"loading="lazy">
-                                <img src="../assets/img/files/mw2021_09.jpg" alt="" class="img"loading="lazy">
+                                <img src="../assets/img/files/mw2021_09.jpg" alt="" class="img"loading="lazy"></figure>
+                                
                             </div>
                             <p class="text-note mt-3">2023.01.14 updated</p>
 
@@ -146,10 +148,12 @@
                             </div> -->
 
                             <div class="file-imgbox">
-                                <img src="../assets/img/files/mw2020_01.jpg" alt="" class="img"loading="lazy">
+                                <figure>
+                                    <img src="../assets/img/files/mw2020_01.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2020_02.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2020_03.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2020_04.jpg" alt="" class="img"loading="lazy">
+                                </figure>
                             </div>
                             <p class="text-note mt-3">2023.01.14 updated</p>
 
@@ -189,12 +193,14 @@
                             </div> -->
 
                             <div class="file-imgbox">
-                                <img src="../assets/img/files/mw2019_01.jpg" alt="" class="img"loading="lazy">
+                                <figure><img src="../assets/img/files/mw2019_01.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2019_02.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2019_03.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2019_04.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2019_05.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2019_06.jpg" alt="" class="img"loading="lazy">
+                            </figure>
+                                
                             </div>
                             <p class="text-note mt-3">2023.01.14 updated</p>
 
@@ -233,7 +239,7 @@
                             </div>
 
                             <div class="file-imgbox">
-                                <img src="../assets/img/files/mw2018_01.jpg" alt="" class="img"loading="lazy">
+                                <figure><img src="../assets/img/files/mw2018_01.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2018_02.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2018_03.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2018_04.jpg" alt="" class="img"loading="lazy">
@@ -243,10 +249,12 @@
                                 <img src="../assets/img/files/mw2018_08.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2018_09.jpg" alt="" class="img"loading="lazy">
                                 <img src="../assets/img/files/mw2018_10.jpg" alt="" class="img"loading="lazy">
-                                <img src="../assets/img/files/mw2018_11.jpg" alt="" class="img"loading="lazy">
+                                <img src="../assets/img/files/mw2018_11.jpg" alt="" class="img"loading="lazy"></figure>
+                                
                             </div>
                             <div class="file-imgbox">
-                                <img src="../assets/img/files/mw2018-2.jpg" alt="" class="img"loading="lazy">
+                                <figure><img src="../assets/img/files/mw2018-2.jpg" alt="" class="img"loading="lazy"></figure>
+                                
                             </div>
                             <p class="text-note mt-3">2023.01.14 updated</p>
 

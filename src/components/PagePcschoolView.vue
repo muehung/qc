@@ -1,19 +1,22 @@
 <script setup>
 import { pcschoolOthersPages } from '../helper/assets';
-import { onMounted, ref, provide } from 'vue';
+import { onMounted, ref, provide, onUnmounted } from 'vue';
 import pcschoolImage from '@/assets/img/files/pcschool.png';
 import pcschoolOldWireImage from '@/assets/img/files/pcschool-old-wire.png';
 
 const pcschoolOthersLocal = ref(pcschoolOthersPages);
+const heroImgboxRef = ref(null);
+// 延遲函數，返回一個 Promise
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
  onMounted(()=>{
     const imgSrc = ref(null);
     const imgTitle = ref(null);
     const imgId = ref(null);
-    
+   
     provide("currentImage" , {imgSrc, imgTitle, imgId});
 
- })
+ });
 </script>
 <template>
     <div class="case-study-container">
@@ -21,18 +24,24 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
         <section class="hero-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 pb-4">
+                    <div class="col-lg-4 pb-4">
                         <div class="hero-content">
                             <h1 class="hero-title">全新改版<br />巨匠電腦官網</h1>
-                            <p class="hero-subtitle">更一致，更專業，流暢的動線，輕鬆找到所需課程。</p>
+                            <p class="hero-subtitle">設計一致簡潔、凸顯資訊清晰明確，輕鬆找到所需課程。</p>
                         </div>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-8">
                         <!-- <div class="hero-imgbg"> -->
-                            <div class="hero-imgbox">
+                            <figure class="hero-imgbox"ref="heroImgboxRef">
                                 <!-- <img :src="laptopImage" alt="laptopImage" class="laptop-img img-fluid" /> -->
                                 <img :src="pcschoolImage" alt="巨匠電腦官網" class="hero-img img-fluid" />
-                            </div>
+                            </figure>
+                            <p class="ps-1 text-center text-gray">
+                              <span class="badge bg-secondary">
+                                <i class="fas fa-arrows-alt-v"></i>
+                              可上下滑動
+                              </span>
+                            </p>
                         <!-- </div> -->
                     </div>
                 </div>
@@ -70,7 +79,7 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
                     <div class="timeline-item">
                     <div class="timeline-number">1</div>
                     <div class="timeline-content">
-                        <p class="timeline-text">kickoff、Overview</p>
+                        <p class="timeline-text">Overview</p>
                     </div>
                     </div>
                     <div class="timeline-item">
@@ -99,25 +108,28 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
         <section class="section-overview">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6 overview">
+                    <div class="col-12 col-md-10 overview">
                         <h2 class="section-title">概述 Overview</h2>
                         <div class="section-content">
                             <p>
-                                巨匠電腦身為老牌技職課程品牌,深根台灣在地多年,提供資訊科技與設計專業技能培訓課程,其核心價值在於提供專業、實用的技能培訓,協助學員提升職場競爭力,並提供就業輔導和國際認證等支持。
+                              巨匠電腦，身為老牌技職課程品牌，全台41間分校。其官方網站，歷史包袱繁多、網頁資訊凌亂錯誤，長年使用者多為內部同仁。
                             </p>
-                            <p>
-                                其官方網站,是潛在學員了解品牌形象、查詢課程資訊、獲取相關內容的重要窗口,其使用者體驗與資訊架構對品牌形象和行銷成效具有直接影響。
-                            </p>
+                            <!-- <p>從2023年底，籌備跨部門團隊，2024年9月，第一版上線後持續迭代更新。</p> -->
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 reason">
+                    <div class="col-12 col-md-10 reason">
                         <h2 class="section-title">改版原因 Problem Statement</h2>
                         <div class="section-content">
-                            <p class="section-text">
-                                舊官網存在長達十多年的技術債,各分校、業務同仁高度使用,卻對潛在學員不友善,有點本末倒置,加上同業競爭激烈,面臨轉型上的挑戰。
-                            </p>
+                          <ol class="ol section-text">
+                            <li>過去為了業務部門、分校同仁方便，造就錯綜復雜的網站資訊，導致新用戶，想要找到預期的課程資訊相當困難與混亂。</li>
+                            <li>為了增加潛在學員更好的使用體驗，除了基本資訊分類與正確性，也提升品牌形象、行銷成效，決定進行全新改版。</li>
+                            <li>同業競爭、資訊AI演進，以及線上課程搶攻市場，不斷面臨轉型上的挑戰。</li>
+                          </ol>
                         </div>
                     </div>
+                    <!-- <div class="overview-img">
+                      <img src="@/assets/img/files/pcschool-" alt="Competitor wireframe" class="wireframe-image" />
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -141,41 +153,51 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 goals">
-                    <h2 class="section-title">設計目標 Goal</h2>
-                    <div class="section-content">
-                    <p class="section-text">
-                        調整首頁、選單為首,帶動其他頁面調整,資訊架構重新整理,以宣傳品牌特色、定位為主,提升新學員使用者體驗和行銷效果。
-                    </p>
-                    <p class="section-text">具體目標包括:</p>
-                    <p class="section-text">
-                        顯著提升網站的帶客點擊率、改善行銷和使用者動線、修正資訊錯誤、建立直覺易懂的導航系統、清晰區隔課程種類、減少干擾元素、優化課程頁資訊架構、提升SEO表現、提供完善的補助資訊和QA頁面,並恢復活動頁功能。
-                    </p>
-                    <p class="section-text">
-                        設計視覺集中且具有引導性的頁面、建立一致且舒適的視覺風格、最終打造一個高效且現代化的學習品牌網站。
-                    </p>
-                    </div>
+                <div class="col-12 col-md-6 wireframe">
+                  <p class="section-text">將舊官網資訊架構單純化成wireframe。</p>
+                  <div class="hero-imgbox">
+                      <!-- <img :src="laptopImage" alt="laptopImage" class="laptop-img img-fluid" /> -->
+                      <img :src="pcschoolOldWireImage" alt="old wireframe" class="hero-img img-fluid" />
+                  </div>
                 </div>
             </div>
         </div>
         </section>
     
         <!-- Wireframe Section -->
-        <section class="section-wireframe">
+        <!-- <section class="section-wireframe">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <h2 class="section-title">解構舊官網首頁 Wireframe</h2>
-                        <p class="section-text">將舊官網資訊架構單純化成wireframe。</p>
+                        
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="hero-imgbox">
-                            <!-- <img :src="laptopImage" alt="laptopImage" class="laptop-img img-fluid" /> -->
-                            <img :src="pcschoolOldWireImage" alt="old wireframe" class="hero-img img-fluid" />
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <section class="section-goals">
+          <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 goals">
+                  <h2 class="section-title">設計目標 Goal</h2>
+                  <div class="section-content">
+                  <p class="section-text">
+                      調整首頁、選單為首,帶動其他頁面調整,資訊架構重新整理,以宣傳品牌特色、定位為主,提升新學員使用者體驗和行銷效果。
+                  </p>
+                  <p class="section-text">具體目標包括:</p>
+                  <p class="section-text">
+                      顯著提升網站的帶客點擊率、改善行銷和使用者動線、修正資訊錯誤、建立直覺易懂的導航系統、清晰區隔課程種類、減少干擾元素、優化課程頁資訊架構、提升SEO表現、提供完善的補助資訊和QA頁面,並恢復活動頁功能。
+                  </p>
+                  <p class="section-text">
+                      設計視覺集中且具有引導性的頁面、建立一致且舒適的視覺風格、最終打造一個高效且現代化的學習品牌網站。
+                  </p>
+                  </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="section-wireframe2">
             <div class="container-fliud">
@@ -186,7 +208,7 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
                     <div class="col-12 col-md-6 py-4">
                         <div class="wireframe2-subtext">
                             <h3 class="subsection-title">同業Wireframe</h3>
-                            <p class="section-text">搭配同業官網分析討論,溝通確認整體資訊架構。</p>
+                            <p class="section-text">搭配同業官網分析討論，提案3種資訊架構，透過企劃溝通確認。</p>
                         </div>
                     </div>
                 </div>
@@ -239,7 +261,7 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
                     <h2 class="section-title">學習到 Learnings</h2>
                     <div class="section-content">
                     <p class="section-text">
-                        透過該專案從頭到現在持續進行中,學習到溝通成本:部門溝通、內部組織溝通,需要人品默契、SEO知識、資訊等等,客製化的使用設計流程工具。
+                        透過該專案從頭到現在持續進行中,學習到溝通成本 : 部門溝通、內部組織溝通,需要人品默契、SEO知識、資訊等等,客製化的使用設計流程工具。
                     </p>
                     </div>
                 </div>
@@ -247,8 +269,12 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
                     <h2 class="section-title">下一步 Next Steps</h2>
                     <div class="section-content">
                     <p class="section-text">
-                        第一階段以形象概念為出發,最重要的首頁、課程頁、政府補助、分校、老師等資訊頁面已完成。但還需要直接的使用者回饋,多方不同部門的意見整合、持續改善。
+                        現階段最重要的首頁、課程頁、政府補助、分校、老師等資訊頁面已完成。但還需要更多更直接的使用者回饋，多方不同部門的意見整合。
                     </p>
+                    <p>
+                      資訊團隊應該引入版本控管、更多自動化、釋出更多權限，讓網站能更有效率的迭代。
+                    </p>
+                    <a type="button" href="https://www.pcschool.com.tw/" target="_blank" class="btn btn-default">前往網站</a>
                     </div>
                 </div>
             </div>
@@ -259,6 +285,9 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
       
 </template>
 <style scoped>
+      .section-content, .section-content p {
+        font-size: 20px;
+      }
       .case-study-container {
         font-family: 'Noto Sans TC', sans-serif;
         color: #333;
@@ -292,7 +321,7 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
       
       .hero-title {
         font-size: 3.5rem;
-        font-weight: 700;
+        font-weight: 500;
         color: #b55b5b;
         margin-bottom: 1rem;
         line-height: 1.2;
@@ -476,8 +505,8 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
       }
       
       .section-title {
-        font-size: 1.8rem;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 500;
         margin-bottom: 1.5rem;
         position: relative;
       }
@@ -496,6 +525,15 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
         padding: 4rem  0;
         background-color: #fff;
       }
+
+      .section-overview .reason {}
+
+      .overview .section-content p{
+        font-size: 20px;
+      }
+
+      .overview-img {}
+
       
       /* Strategy Section */
       .strategy-section {
@@ -514,7 +552,7 @@ const pcschoolOthersLocal = ref(pcschoolOthersPages);
       }
       
       /* Goals Section */
-      .goals-section {
+      .section-goals {
         padding: 4rem 2rem;
         background-color: #f5f5f5;
       }
