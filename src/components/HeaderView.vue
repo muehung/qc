@@ -37,7 +37,7 @@ onMounted(()=>{
                     <Vue3Lottie :animationData="kvDecoJSON" class="lottie-kv-deco" />
                 </div>
                 <div class="col-10 col-sm-8 col-md-6">
-                    <h1 class="main-title">I'm Cheryl.</h1>
+                    <h1 class="main-title">I'm Cheryl Hung.</h1>
                     <!-- <h2>Cheryl Hung</h2> -->
                     <!-- <h2 class="main-subtitle">專注於<span class="light">網頁設計</span>、<span class="light">網頁前端</span>，瞭解<span class="">使用者經驗</span>、<span class="">手機介面</span></h2>
                     <p class="main-txtbox">將美感與技術相結合，解決問題與挑戰，打造直觀且吸引人的數位介面，致力於創造出兼具美感與實用性的作品。</p> -->
