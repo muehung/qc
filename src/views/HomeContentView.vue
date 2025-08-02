@@ -21,7 +21,16 @@ const list = ref(store.portfolio);
                             <Card v-bind="n" />
                         </div>
                     </template>
-                    
+                </div>
+            </div>
+             <div class="container">
+                <h2 class="title">社群圖</h2>
+                <div class="row justify-content-center item-group">
+                    <div class="col-10 col-sm-8 col-lg-5">
+                        <div class="banner-container">
+                            <iframe src="https://www.behance.net/embed/project/223304511?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -35,15 +44,15 @@ const list = ref(store.portfolio);
                     <div class="col-10 mb-3 about-text">
                         <p>從平面、品牌設計起步，隨著對網頁設計的興趣加深，開始自學並在一家網頁設計公司發展技能。後來，加入 IT 媒體公司，深入了解工程師專業術語，擴展視野，目前在教育品牌公司，協助官方網站改版迭代。</p>
                         <p class="mb-5">
-                            資訊焦慮促使學習趨勢上的技術，JavaScript、jQuery、切版課程、Vue.js 課程。也參加了 UX 讀書會，AI工具逐步應用，進一步提升我的設計與技術能力。
+                            對新知的渴望驅使我持續學習設計知識、前端技術，如 JavaScript、jQuery、切版與 Vue.js，也積極參與 UX課程，並逐步將 AI 工具應用於設計流程，讓我的設計與技術能力不斷精進。
                         </p>
                     </div>
                     <div class="col-12 col-lg-6">
                         <h4 class="til mt-0">成果</h4>
                         <ul class="ul">
-                            <li>巨匠電腦官網，結束10年+老舊官網，改頭換面</li>
-                            <li>資安大會網站，建構設計、切版規則與標準</li>
-                            <li>webinar、iT plus 影音系統，建構設計、切版規則與標準</li>
+                            <li>執行巨匠電腦官網改版，成功翻新十年以上的舊網站</li>
+                            <li>規劃並設計資安大會網站，建立切版規範與設計標準</li>
+                            <li>打造 webinar 與 iT plus 影音系統，制定設計與切版流程</li>
                         </ul>
                     </div>
                     <div class="col-12 col-lg-5">
