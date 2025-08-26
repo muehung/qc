@@ -10,6 +10,6 @@
     </div>
     <footer>
         <!-- <a href="mailto:hung.co24@gmail.com" class="text-blue-400 hover:underline">hung.co24@gmail.com</a> -->
-        Cheryl's, copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2025
+         Cheryl's, copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2025
    </footer>
 </template>
