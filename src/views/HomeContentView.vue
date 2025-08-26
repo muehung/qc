@@ -50,7 +50,7 @@ const list = ref(store.portfolio);
                     <div class="col-12 col-lg-6">
                         <h4 class="til mt-0">成果</h4>
                         <ul class="ul">
-                            <li>執行巨匠電腦官網改版，成功翻新十年以上的舊網站</li>
+                            <li>巨匠電腦官網改版設計與切版，翻新十年以上的舊網站</li>
                             <li>規劃並設計資安大會網站，建立切版規範與設計標準</li>
                             <li>打造 webinar 與 iT plus 影音系統，制定設計與切版流程</li>
                         </ul>
@@ -72,38 +72,49 @@ const list = ref(store.portfolio);
         </section>
     
         <section class="section-skills" id="skills">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- <h4 class="title-sub">Skills</h4> -->
                 <div class="row">
                     <div class="col-12 row justify-content-center">
-                        <div class="col-12 col-md-2">
+                        <!-- <div class="col-12 col-md-2">
                             <h3 class="title mt-0">技能與軟體</h3>
+                        </div> -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <ul class="ul skill-list">
+                                <p class="head">設計技能</p>
+                                <li>UI/UX 設計</li>
+                                <li>色彩配置、版面設計、一致性</li>
+                                <li>設計流程 - 從需求分析到設計交付</li>
+                                <li>Wireframe - 資訊架構與原型設計</li>
+                                <li>專業圖庫搜尋與版權素材應用</li>
+                            </ul>
                         </div>
-                        <div class="col-12 col-md-3">
-                            <ul class="ul">
+                        
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <ul class="ul skill-list">
+                                <p class="head">設計工具</p>
+                                <li>Figma - 介面設計、團隊協作</li>
+                                <li>Adobe 系列軟體應用</li>
+                            </ul>
+                            <ul class="ul mt-5 skill-list">
+                                <p class="head">AI工具應用</p>
+                                    <li>文字生成圖像</li>
+                                    <li>圖片生成影片</li>
+                                    <li>vibe coding 生成應用</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <ul class="ul skill-list">
+                                <p class="head">團隊協作</p>
+                                <li>Scrum - 敏捷開發流程參與經驗</li>
+                                <li>Git - 版本控制與團隊協作工具</li>
+                            </ul>
+                            <ul class="ul mt-5 skill-list">
+                                <p class="head">前端技術（加分項）</p>
                                 <li>HTML / CSS / SCSS</li>
-                                <li>Git</li>
-                                <li>Bootstrap 5</li>
-                                <li>JavaScript / jQuery</li>
-                                <li>Vue 3 / Pinia / Vite</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <ul class="ul">
-                                <li>Figma</li>
-                                <li>Photoshop</li>
-                                <li>Illustrator</li>
-                                <li>Wireframe</li>
-                                <li>Scrum</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <ul class="ul">
-                                <li>視覺設計</li>
-                                <li>設計流程</li>
-                                <!-- <li>影片剪接</li> -->
-                                <!-- <li>網頁與網路基礎知識</li> -->
-                                <!-- <li>插畫設計</li> -->
+                                <li>JavaScript / jQuery - 互動功能</li>
+                                <li>響應式網頁框架基礎</li>
+                                <!-- <li>Vue 3 / Pinia / Vite - 現代前端框架開發</li> -->
                             </ul>
                         </div>
                     </div>
@@ -112,7 +123,7 @@ const list = ref(store.portfolio);
                             <h3 class="title">學習</h3>
                         </div>
                         <div class="col-12">
-                            <ul class="ul">
+                            <ul class="ul skill-list">
                                 <li>產品設計實戰：用 Figma 打造絕佳 UI/UX</li>
                                 <li>JavaScript / jQuery 前端開發入門實戰</li>
                                 <li>插畫設計</li>

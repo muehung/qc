@@ -525,6 +525,13 @@ header.main {
   color: #fff;
 }
 
+.skill-list .head {
+  font-size: 18px;
+  color: #a38ce4;
+}
+.skill-list li {
+  color: #ddd;
+}
 
 /* index blog */
 .section-blog {
