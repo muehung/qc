@@ -8,6 +8,8 @@
   width: 100%;
   height: 80px;
   padding: 0px 20px;
+  padding-top: 80px;
+  margin-top: -80px;
   line-height: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,11 +22,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: var(--bannerBgDark);
+  background: var(--bannerBgLight);
 }
 
 .nav-content {
-  background: var(--bannerBgDark);
+  background: var(--bannerBgLight);
 }
 /* nav-main innerPage */
 .nav-content.nav-main .nav-list .nav-li .nav-li-a {
@@ -59,9 +61,8 @@
   background-color: #fff;
 }
 
-.nav-main .nav-logo::before {
+/* .nav-main .nav-logo::before {
   content: '';
-  /* background: linear-gradient(to bottom,  #2f2645 0%, transparent 100%); */
   width: 0px;
    height: 0px;
    border-style: solid;
@@ -71,10 +72,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 100px;
-  height: 100px; */
   z-index: -1;
-}
+} */
 
 /* 第一層 ul */
 .nav-main .nav-list {
@@ -116,6 +115,7 @@
       transform: translateY(2px);
 }
 .nav-main .nav-list .nav-li .nav-li-a {
+  position: relative;
   padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,12 +130,13 @@
   border-bottom: 3px solid transparent;
   border-radius: 3px;
   color: var(--navLink);
-  background-color: #413362b2;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 2px 2px #69608026;
 }
 .nav-main .nav-list .nav-li .nav-li-a:hover,
 .nav-main .nav-list .nav-li .nav-li-a:focus {
   color: var(--navLinkHover);
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 .nav-main .nav-list .nav-li:active .nav-li-a {
   /* background-color: #efefef; */
@@ -241,7 +242,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    /* position: absolute; */
+    padding-top: 0px;
+    margin-top: 0px;
   }
 
   .nav-main .nav-logo::before {
@@ -274,10 +276,11 @@
   }
 
   /* 漢堡選單打開 */
-  .burgerOpen {
+  .nav-main > .burgerOpen {
     -webkit-transform: translateX(0) !important;
         -ms-transform: translateX(0) !important;
             transform: translateX(0) !important;
+    background-color: #fff;
   }
 
   .nav-main .nav-list .nav-li {
@@ -296,7 +299,7 @@
   .nav-content.nav-main .nav-list .nav-li .nav-li-a {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    color: #ccafff;
+    color: #ffffff99;
   }
 
   .nav-main .hamburger {
@@ -316,7 +319,7 @@
   .nav-main .hamburger span {
     width: 30px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #7e7e7e;
     position: absolute;
     -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
