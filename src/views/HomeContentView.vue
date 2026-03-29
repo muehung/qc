@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import { useStore } from '../stores';
 import Header from './../components/HeaderView.vue'
 import Card from './../components/Card.vue'
+import playgroundAngelTeaShopImg from "./../assets/img/cover/playground-angel-tea-shop.png";
 
 const store = useStore();
 const list = ref(store.portfolio);
@@ -13,7 +14,7 @@ const list = ref(store.portfolio);
         <Header />
         <section class="section-files main" id="portfolio">
             <div class="container">
-                <h2 class="title">專案</h2>
+                <!-- <h2 class="title">專案</h2> -->
 
                 <div class="row justify-content-center item-group">
                     <template v-for="n in list" :key="n.id" >
@@ -24,11 +25,21 @@ const list = ref(store.portfolio);
                 </div>
             </div>
              <div class="container">
-                <h2 class="title">社群圖</h2>
                 <div class="row justify-content-center item-group">
-                    <div class="col-10 col-sm-8 col-lg-5">
-                        <div class="banner-container">
-                            <iframe src="https://www.behance.net/embed/project/223304511?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <h2 class="title">PLAYGROUND</h2>
+                        <a href="https://drink-order-form.onrender.com/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-lg d-block mx-auto">
+                            <img :src="playgroundAngelTeaShopImg" alt="天使飲料店" class="img-fluid mb-3"/>
+                            <p class="h3">天使飲料店</p>
+                            <div class="">飲料填單系統（模擬填單、送單到完成訂單的流程）</div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-10 mt-5">
+                <!-- <h2 class="title">社群圖</h2> -->
+                        <div class="banner-container text-end">
+                            <!-- <iframe src="https://www.behance.net/embed/project/223304511?ilo0=1" height="150" width="300" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe> -->
+                             <a href="https://www.behance.net/embed/project/223304511?ilo0=1" target="_blank" rel="noopener noreferrer" class="btn">社群圖</a>
                         </div>
                     </div>
                 </div>
@@ -37,17 +48,22 @@ const list = ref(store.portfolio);
 
         <section class="section-about" id="about">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-10">
                         <h3 class="til mt-0">關於我</h3>
                     </div>
-                    <div class="col-10 mb-3 about-text">
+                    <div class="col-10 col-md-7 mb-3 about-text">
                         <p>從平面、品牌設計起步，隨著對網頁設計的興趣加深，開始自學並在一家網頁設計公司發展技能。後來，加入 IT 媒體公司，深入了解工程師專業術語，擴展視野，目前在教育品牌公司，協助官方網站改版迭代。</p>
                         <p class="mb-5">
                             對新知的渴望驅使我持續學習設計知識、前端技術，如 JavaScript、jQuery、切版與 Vue.js，也積極參與 UX課程，並逐步將 AI 工具應用於設計流程，讓我的設計與技術能力不斷精進。
                         </p>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-10 col-md-3">
+                        <div class="kv-avartar">
+                        <img src="./../assets/img/hello.jpeg" alt="hello" class="img-fluid kv-deco-img"/>
+                     </div>
+                    </div>
+                    <div class="col-10 col-lg-5">
                         <h4 class="til mt-0">成果</h4>
                         <ul class="ul">
                             <li>巨匠電腦官網改版設計與切版，翻新十年以上的舊網站</li>
@@ -55,7 +71,7 @@ const list = ref(store.portfolio);
                             <li>打造 webinar 與 iT plus 影音系統，制定設計與切版流程</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-lg-5">
+                    <div class="col-10 col-lg-5">
                         <h4 class="til mt-0">經歷</h4>
                         <ul class="ul">
                             <li>2023 ~ 至今 : <a href="https://www.pcschool.com.tw/" target="_blank">巨匠電腦</a></li>
@@ -82,7 +98,7 @@ const list = ref(store.portfolio);
                         <div class="col-12 col-md-6 col-lg-3">
                             <ul class="ul skill-list">
                                 <p class="head">設計技能</p>
-                                <li>UI/UX 設計</li>
+                                <li>UI 設計</li>
                                 <li>色彩配置、版面設計、一致性</li>
                                 <li>設計流程 - 從需求分析到設計交付</li>
                                 <li>Wireframe - 資訊架構與原型設計</li>
@@ -110,7 +126,7 @@ const list = ref(store.portfolio);
                                 <li>Git - 版本控制與團隊協作工具</li>
                             </ul>
                             <ul class="ul mt-5 skill-list">
-                                <p class="head">前端技術（加分項）</p>
+                                <p class="head">前端技術</p>
                                 <li>HTML / CSS / SCSS</li>
                                 <li>JavaScript / jQuery - 互動功能</li>
                                 <li>響應式網頁框架基礎</li>

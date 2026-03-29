@@ -18,9 +18,9 @@ const caseList = [
     coverImg: pcschoolImg,
     logo: gjunLogo,
     webType: "形象網站",
-    tag: ["設計", "切版"],
+    tag: ["執行", "切版", "維護"],
     head: "巨匠電腦官網",
-    infoDate: "2023 - 2025",
+    infoDate: "2023 - 2026",
   },
   {
     id: "02",
