@@ -69,7 +69,7 @@
                         <div class="tab-pane content2021 fade" id="tabContent2021" role="tabpanel"
                             aria-labelledby="tabContent2021">
                             <h2 class="year">2021
-                                <a href="event/mw/index.html" class="btn btn-file" target="_blank">
+                                <a href="https://modernweb.tw/2021/index.html" class="btn btn-file" target="_blank">
                                     線上觀看
                                 </a>
                             </h2> 
