@@ -1651,7 +1651,7 @@ input[type=radio]:disabled:hover::after {
 
 .channel-item-btn {
   padding: 10px;
-  background-color: #d6d6d6;
+  /* background-color: #d6d6d6; */
 }
 .channel-item-btn .btn { /*一樣寬 切換不會位移 */
   min-width: 105px;
