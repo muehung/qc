@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="iTtalk" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="iTtalk" />
+    <meta property="og:image" content="img/fb.jpg" />
+    <title>iTtalk</title>
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.4.6.2.min.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome.5.5.0.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav-mainbox navBox" id="nav-xs">
+        <div class="nav-mainbox-frondbox">
+            <a href="/" class="nav-logobox">
+                <img src="img/logo_it.svg" alt="" class="logo">
+            </a>
+            
+            <a type="button" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <!-- navbar 不需登入 -->
+        <div class="nav-mainbox-normal navInnerHeight clearfix">
+            <form class="nav-form-search">
+                <input class="form-control search-input" type="search" placeholder="輸入關鍵字搜尋" aria-label="Search">
+                <button class="btn search-click" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="normal-menu">
+                <li class="nav-li"><a href="" class="nav-li-a">觀看線上研討會</a></li>
+                <li class="nav-li"><a href="" class="nav-li-a">觀看隨選影片</a></li>
+                <li class="nav-li down-inside">
+                    <a href="" class="nav-li-a downInsideMenu">
+                        探索
+                    </a>
+                    <div class="down-menu downMenu">
+                        <ul class="nav-list down navInside">
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a" target="_blank">頻道</a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a" target="_blank">主題</a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a" target="_blank">系列</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-li down-inside">
+                    <a href="" class="nav-li-a downInsideMenu">
+                        下載中心
+                    </a>
+                    <div class="down-menu downMenu">
+                        <ul class="nav-list down navInside">
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a">簡報</a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a">白皮書</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- navbar 會員區 -->
+        <div class="nav-mainbox-member">
+            <!-- login out 登出中 -->
+            <ul class="nav-memberbox-logout">
+                <li class="nav-li nav-li-member-logout">
+                    <a href="" class="nav-li-a login">登入 / 註冊</a>
+                </li>
+            </ul>
+
+            <!-- login ing 登入中 -->
+            <!-- <ul class="nav-memberbox-logining">
+                <div class="nav-li nav-li-alert d-none d-lg-inline-block">
+                    <a href="" class="nav-li-a">
+                        <div class="far fa-bell alertbox">
+                            <span class="alert-number">99<sup>+</sup></span>
+                        </div>
+                    </a>
+                </div>
+                <li class="nav-li nav-li-member-logining navMember">
+                    <a href="" class="nav-li-a down-inside">
+                        <div class="avatar-box avatarBtn">
+                            <img src="https://member.ithome.com.tw/avatars/131678?s=ithelp" alt="avatar" class="avatar-img">
+                        </div>
+                    </a>
+                    <ul class="logining-menu nav-list down" id="downMemberMenu">
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">我的報名</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">最近觀看的隨選影片</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">我訂閱的頻道</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">我的收藏</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">我的評價</a>
+                        </li>
+
+                        <div class="hr"></div>
+
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">帳號設定</a>
+                        </li>                              
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a logout">登出</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ul> -->
+        </div>
+        
+    
+    </nav>
+    <!-- end Navigation -->
+
+
+    <!-- kv  -->
+    <!-- <div class="kv-content">
+        <div class="container">
+            <div class="kv-txt">
+                <h2 class="kv-title">
+                    iTtalk 主題列表
+                </h2>
+                <h4 class="sub">
+                    我是主題頁的 slogan 我是主題頁的 slogan
+                </h4>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="sec-list sec-search">
+        <div class="container container-list">
+            <div class="row justify-content-center">
+                <div class="col-12 mb-3 search-control">
+                    <form action="" class="form-group mx-0 align-items-center search-control-form">
+                        <div class="col-lg-4 p-2 searchbar">
+                            <input class="form-control search-input" type="search" placeholder="搜尋結果：安全" aria-label="Search">
+                            <button class="btn search-click" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="col-lg-1 py-2 pr-0 text-lg-right searchbar-popnote">
+                            <!-- <a tabindex="0" class="btn btn-sm small btn-popover" role="button" data-toggle="popover" data-trigger="focus" title="搜尋提醒" data-content="您可同時輸入多個主題，加上系列、頻道，來綜合篩選出結果"><i class="fas fa-2x fa-exclamation-circle"></i></a> -->
+                            <span class="txt-small">進階篩選</span>
+                        </div>
+                        <div class="col-lg-3 p-2 searchbar-select">                        
+                            <input class="search-input" placeholder="輸入主題名稱關鍵字搜尋" list="DatalistTopic">
+                            <datalist id="DatalistTopic" role="topic list">
+                                <option value="API 安全">API 安全</option>
+                                <option value="企業安全">企業安全</option>
+                                <option value="網路安全">網路安全</option>
+                                <option value="API 安全">API 安全</option>
+                                <option value="API 安全">API 安全</option>
+                                <option value="企業安全">企業安全</option>
+                                <option value="網路安全">網路安全</option>
+                                <option value="API 安全">API 安全</option>
+                                <option value="API 安全">API 安全</option>
+                            </datalist>
+                        </div>
+                        <div class="col-lg-2 p-2 searchbar-input">
+                            <select class="col" name="" required>
+                                <option selected="selected" value="">所有系列</option>
+                                <option value="0">非系列</option>
+                                <option value="1">Cybersec 2022 資安大會</option>
+                                <option value="2">Modern Web</option>
+                            </select>                    
+                        </div>
+                        <div class="col-lg-2 p-2 searchbar-input">
+                            <select class="col" name="" required>
+                                <option selected="selected" value="0">所有頻道</option>
+                                <option value="1">亞利安科技</option>
+                                <option value="2">亞馬遜網路服務有限公司</option>
+                                <option value="3">中華電信</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="row mx-0 px-3 gap-2 form-filter-group">
+                        <label for="" class="txt-small">篩選器：</label>
+                        <div class="alert fade show tag filter-tag" role="filter">
+                            關鍵字：安全
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i aria-hidden="true">&times;</i>
+                            </button>
+                        </div>
+                        <div class="alert fade show tag filter-tag" role="filter">
+                            主題：大數據
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i aria-hidden="true">&times;</i>
+                            </button>
+                        </div>
+                        <div class="alert fade show tag filter-tag" role="filter">
+                            主題：AI 人工智慧
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i aria-hidden="true">&times;</i>
+                            </button>
+                        </div>
+                        <div class="alert fade show tag filter-tag" role="filter">
+                            系列：CYBERSEC NOW 2022
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i aria-hidden="true">&times;</i>
+                            </button>
+                        </div>
+                        <div class="alert fade show tag filter-tag" role="filter">
+                            頻道：中華電信
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i aria-hidden="true">&times;</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 搜尋結果 -->
+            <div class="row justify-content-center search-result">
+                <!-- /* 類型 */ -->
+                <div class="col-12 col-lg-3 pr-lg-0 d-none d-lg-block search-result-type">                                
+                    <div class="type-group">
+                        <button class="btn btn-block d-flex justify-content-between type-item active" type="button">
+                            <span class="txt">全部</span>
+                            <span class="badge num">1123</span>
+                        </button>
+                        <button class="btn btn-block d-flex justify-content-between type-item" type="button">
+                            <span class="txt">線上研討會</span>
+                            <span class="badge num">568</span>
+                        </button>
+                        <button class="btn btn-block d-flex justify-content-between type-item" type="button">
+                            <span class="txt">隨選影片</span>
+                            <span class="badge num">415</span>
+                        </button>
+                        <button class="btn btn-block d-flex justify-content-between type-item" type="button">
+                            <span class="txt">頻道</span>
+                            <span class="badge num">89</span>
+                        </button>
+                        <button class="btn btn-block d-flex justify-content-between type-item" type="button">
+                            <span class="txt">系列</span>
+                            <span class="badge num">51</span>
+                        </button>
+                    </div>
+                    <!-- https://picsum.photos/id/450/300/600 -->
+                    <figure class="p-3 text-center d-none d-md-block figure-fancy">
+                        <a href="http://" target="_blank" rel="a good product">
+                            <img src="img/temp/300x600.png" alt="" style="max-width:300px;">
+                        </a>
+                    </figure>
+                </div>
+                
+                <!-- /* 結果列表 */ -->
+                <div class="col-12 col-lg-9 search-result-body">
+                    <div class="row mx-0 justify-content-center bg-white">
+                        <div class="col-12 row justify-content-between align-items-center result-header">
+                            <h3 class="til">搜尋結果</h3>
+                            <div class="search-macth-count">
+                                <span class="count-head">
+                                    第 <span class="num">1-20</span> 筆
+                                </span> / 
+                                <span class="count-body">
+                                    共 <span class="num">1123</span> 筆
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 result-content">
+                            <div class="saerch-result-item-group">
+                                <!-- result item -->
+                                <a href="" class="result-link">
+                                    <div class="result-item">
+                                        <div class="col pr-0">
+                                            <!-- 判斷 tag種類 -->
+                                            <div class="tagbox">
+                                                <!-- <span class="tag type-channel">頻道</span> -->
+                                                <span class="tag type-online">線上研討會</span>
+                                                <!-- <span class="tag type-ondemand">隨選影片</span> -->
+                                                <!-- <span class="tag series">系列</span> -->
+                                                <!-- <span class="tag regist-open">報名開放中</span> -->
+                                                <!-- <span class="tag regist-close">報名已截止</span>
+                                                <span class="tag regist-coming">報名未開放</span>
+                                                <span class="tag regist-verify">報名須審核</span> -->
+                                            </div>
+                                            <!-- 判斷 tag種類 -->
+
+                                            <!-- 縮圖 -->
+                                            <div class="result-thumbnail">
+                                                <figure class="">
+                                                    <img src="img/default-webinar-s.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                            <!-- 縮圖 -->
+                                        </div>
+                                        <div class="col-md-9 col-lg-10">
+                                            <!-- Title -->
+                                            <div class="h5 limited-row-1 result-title">
+                                                我是線上研討會名稱無效的培訓花一分鐘都是浪費-如何建構最高性價比的資訊安全
+                                            </div>
+                                            <!-- Title -->
+
+                                            <!-- Speaker -->
+                                            <div class="txt-small result-speaker">
+                                                王小明 / 測試科技 技術顧問
+                                            </div>
+                                            <!-- Speaker -->
+
+                                            <!-- summary -->
+                                            <div class="small limited-row-2 result-intro">我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻.</div>
+                                            <!-- summary -->
+
+                                            <!-- 差異 -->
+                                            <!-- 差異1. 如果是研討會 -->
+                                            <time class="p timebox">
+                                                <span class="year">2022/</span>
+                                                <span class="date">06/23</span>
+                                                <span class="during">
+                                                    <span class="from">上午10:05</span>
+                                                </span>
+                                            </time>
+                                            <!-- 差異1. 如果是研討會 -->
+
+                                            <!-- 差異2. 如果是隨選影片 -->
+                                            <!--  無 -->
+                                            <!-- 差異2. 如果是隨選影片 -->
+
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <!-- <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                                <span class="badge">
+                                                    訂閱人數
+                                                    <span class="num">777</span>
+                                                </span>
+                                            </div>    -->
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <!-- 差異4. 如果是系列 -->
+                                            <!-- <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                            </div> -->
+                                            <!-- 差異4. 如果是系列 -->
+                                            <!-- 差異 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- result item -->
+                                <!-- result item -->
+                                <a href="" class="result-link">
+                                    <div class="result-item">
+                                        <div class="col pr-0">
+                                            <!-- 判斷 tag種類 -->
+                                            <div class="tagbox">
+                                                <!-- <span class="tag type-channel">頻道</span> -->
+                                                <!-- <span class="tag type-online">線上研討會</span> -->
+                                                <span class="tag type-ondemand">隨選影片</span>
+                                                <!-- <span class="tag series">系列</span> -->
+                                                <!-- <span class="tag regist-open">報名開放中</span> -->
+                                                <!-- <span class="tag regist-close">報名已截止</span>
+                                                <span class="tag regist-coming">報名未開放</span>
+                                                <span class="tag regist-verify">報名須審核</span> -->
+                                            </div>
+                                            <!-- 判斷 tag種類 -->
+
+                                            <!-- 縮圖 -->
+                                            <div class="result-thumbnail">
+                                                <figure class="">
+                                                    <img src="img/default-vod-s.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                            <!-- 縮圖 -->
+                                        </div>
+                                        <div class="col-md-9 col-lg-10">
+                                            <!-- Title -->
+                                            <div class="h5 limited-row-1 result-title">
+                                                我是隨選影片名稱我是隨選影片名稱無效的培訓花一分鐘都是浪費-如何建構最高性價比的資訊安全防線資訊
+                                            </div>
+                                            <!-- Title -->
+
+                                            <!-- Speaker -->
+                                            <div class="txt-small result-speaker">
+                                                王小明 / 測試科技 技術顧問
+                                            </div>
+                                            <!-- Speaker -->
+
+                                            <!-- summary -->
+                                            <div class="small limited-row-2 result-intro">我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻.</div>
+                                            <!-- summary -->
+
+                                            <!-- 差異 -->
+                                            <!-- 差異1. 如果是研討會 -->
+                                            <!-- <time class="p timebox">
+                                                <span class="year">2022/</span>
+                                                <span class="date">06/23</span>
+                                                <span class="during">
+                                                    <span class="from">上午10:05</span>
+                                                </span>
+                                            </time> -->
+                                            <!-- 差異1. 如果是研討會 -->
+
+                                            <!-- 差異2. 如果是隨選影片 -->
+                                            <!--  無 -->
+                                            <!-- 差異2. 如果是隨選影片 -->
+
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <!-- <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                                <span class="badge">
+                                                    訂閱人數
+                                                    <span class="num">777</span>
+                                                </span>
+                                            </div>    -->
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <!-- 差異4. 如果是系列 -->
+                                            <!-- <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                            </div> -->
+                                            <!-- 差異4. 如果是系列 -->
+                                            <!-- 差異 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- result item -->
+                                <!-- result item -->
+                                <a href="" class="result-link">
+                                    <div class="result-item">
+                                        <div class="col pr-0">
+                                            <!-- 判斷 tag種類 -->
+                                            <div class="tagbox">
+                                                <span class="tag type-channel">頻道</span>
+                                                <!-- <span class="tag type-online">線上研討會</span> -->
+                                                <!-- <span class="tag type-ondemand">隨選影片</span> -->
+                                                <!-- <span class="tag series">系列</span> -->
+                                                <!-- <span class="tag regist-open">報名開放中</span> -->
+                                                <!-- <span class="tag regist-close">報名已截止</span>
+                                                <span class="tag regist-coming">報名未開放</span>
+                                                <span class="tag regist-verify">報名須審核</span> -->
+                                            </div>
+                                            <!-- 判斷 tag種類 -->
+
+                                            <!-- 縮圖 -->
+                                            <div class="result-thumbnail">
+                                                <figure class="">
+                                                    <img src="img/default-channel.png" alt="">
+                                                </figure>
+                                            </div>
+                                            <!-- 縮圖 -->
+                                        </div>
+                                        <div class="col-md-9 col-lg-10">
+                                            <!-- Title -->
+                                            <div class="h5 limited-row-1 result-title">
+                                                亞馬遜網路服務有限公司
+                                            </div>
+                                            <!-- Title -->
+
+                                            <!-- Speaker -->
+                                            <!-- <div class="txt-small result-speaker">
+                                                王小明 / 測試科技 技術顧問
+                                            </div> -->
+                                            <!-- Speaker -->
+
+                                            <!-- summary -->
+                                            <div class="small limited-row-2 result-intro">我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻.</div>
+                                            <!-- summary -->
+
+                                            <!-- 差異 -->
+                                            <!-- 差異1. 如果是研討會 -->
+                                            <!-- <time class="p timebox">
+                                                <span class="year">2022/</span>
+                                                <span class="date">06/23</span>
+                                                <span class="during">
+                                                    <span class="from">上午10:05</span>
+                                                </span>
+                                            </time> -->
+                                            <!-- 差異1. 如果是研討會 -->
+
+                                            <!-- 差異2. 如果是隨選影片 -->
+                                            <!--  無 -->
+                                            <!-- 差異2. 如果是隨選影片 -->
+
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                                <span class="badge">
+                                                    訂閱人數
+                                                    <span class="num">777</span>
+                                                </span>
+                                            </div>   
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <!-- 差異4. 如果是系列 -->
+                                            <!-- <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                            </div> -->
+                                            <!-- 差異4. 如果是系列 -->
+                                            <!-- 差異 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- result item -->
+                                <!-- result item -->
+                                <a href="" class="result-link">
+                                    <div class="result-item">
+                                        <div class="col pr-0">
+                                            <!-- 判斷 tag種類 -->
+                                            <div class="tagbox">
+                                                <!-- <span class="tag type-channel">頻道</span> -->
+                                                <!-- <span class="tag type-online">線上研討會</span> -->
+                                                <!-- <span class="tag type-ondemand">隨選影片</span> -->
+                                                <span class="tag series">系列</span>
+                                                <!-- <span class="tag regist-open">報名開放中</span> -->
+                                                <!-- <span class="tag regist-close">報名已截止</span>
+                                                <span class="tag regist-coming">報名未開放</span>
+                                                <span class="tag regist-verify">報名須審核</span> -->
+                                            </div>
+                                            <!-- 判斷 tag種類 -->
+
+                                            <!-- 縮圖 -->
+                                            <div class="result-thumbnail">
+                                                <figure class="">
+                                                    <img src="img/default-series.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                            <!-- 縮圖 -->
+                                        </div>
+                                        <div class="col-md-9 col-lg-10">
+                                            <!-- Title -->
+                                            <div class="h5 limited-row-1 result-title">
+                                                CYBERSEC NOW solution days 2022
+                                            </div>
+                                            <!-- Title -->
+
+                                            <!-- Speaker -->
+                                            <!-- <div class="txt-small result-speaker">
+                                                王小明 / 測試科技 技術顧問
+                                            </div> -->
+                                            <!-- Speaker -->
+
+                                            <!-- summary -->
+                                            <div class="small limited-row-2 result-intro">生存在滾動式常態時代，我們正在參與一場永不止息的轉型旅程。未來，數以萬計的低軌衛星於地球上空環繞，串聯起全球高速資訊網絡；各式無人載具在地球的各個空間自主運行，交織成高效運輸網路﹔人們，在虛擬世界與現實世界穿梭自如。在數位轉型的推波助瀾下，實體世界與網路空間逐漸融為一體，萬物的運作再也脫離不了晶片、程式碼與網路，而眼下的資安議題，不再只是單純的資訊安全，而是觸及人身安全、國家安全與全球安全的迫切課題。</div>
+                                            <!-- summary -->
+
+                                            <!-- 差異 -->
+                                            <!-- 差異1. 如果是研討會 -->
+                                            <!-- <time class="p timebox">
+                                                <span class="year">2022/</span>
+                                                <span class="date">06/23</span>
+                                                <span class="during">
+                                                    <span class="from">上午10:05</span>
+                                                </span>
+                                            </time> -->
+                                            <!-- 差異1. 如果是研討會 -->
+
+                                            <!-- 差異2. 如果是隨選影片 -->
+                                            <!--  無 -->
+                                            <!-- 差異2. 如果是隨選影片 -->
+
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <!-- <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                                <span class="badge">
+                                                    訂閱人數
+                                                    <span class="num">777</span>
+                                                </span>
+                                            </div>    -->
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <!-- 差異4. 如果是系列 -->
+                                            <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                            </div>
+                                            <!-- 差異4. 如果是系列 -->
+                                            <!-- 差異 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- result item -->
+                                <!-- result item -->
+                                <a href="" class="result-link">
+                                    <div class="result-item">
+                                        <div class="col pr-0">
+                                            <!-- 判斷 tag種類 -->
+                                            <div class="tagbox">
+                                                <span class="tag type-online">線上研討會</span>
+                                                <!-- <span class="tag type-ondemand">隨選影片</span> -->
+                                                <!-- <span class="tag series">系列</span> -->
+                                                <!-- <span class="tag regist-open">報名開放中</span> -->
+                                                <!-- <span class="tag regist-close">報名已截止</span>
+                                                <span class="tag regist-coming">報名未開放</span>
+                                                <span class="tag regist-verify">報名須審核</span> -->
+                                            </div>
+                                            <!-- 判斷 tag種類 -->
+
+                                            <!-- 縮圖 -->
+                                            <div class="result-thumbnail">
+                                                <figure class="">
+                                                    <img src="img/default-webinar-s.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                            <!-- 縮圖 -->
+                                        </div>
+                                        <div class="col-md-9 col-lg-10">
+                                            <!-- Title -->
+                                            <div class="h5 limited-row-1 result-title">
+                                                我是線上研討會名稱無效的培訓花一分鐘都是浪費-如何建構最高性價比的資訊安全
+                                            </div>
+                                            <!-- Title -->
+
+                                            <!-- Speaker -->
+                                            <div class="txt-small result-speaker">
+                                                王小明 / 測試科技 技術顧問
+                                            </div>
+                                            <!-- Speaker -->
+
+                                            <!-- summary -->
+                                            <div class="small limited-row-2 result-intro">我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻道簡介我是頻.</div>
+                                            <!-- summary -->
+
+                                            <!-- 差異 -->
+                                            <!-- 差異1. 如果是研討會 -->
+                                            <time class="p timebox">
+                                                <span class="year">2022/</span>
+                                                <span class="date">06/23</span>
+                                                <span class="during">
+                                                    <span class="from">上午10:05</span>
+                                                </span>
+                                            </time>
+                                            <!-- 差異1. 如果是研討會 -->
+
+                                            <!-- 差異2. 如果是隨選影片 -->
+                                            <!--  無 -->
+                                            <!-- 差異2. 如果是隨選影片 -->
+
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                                <span class="badge">
+                                                    訂閱人數
+                                                    <span class="num">777</span>
+                                                </span>
+                                            </div>   
+                                            <!-- 差異3. 如果是頻道 -->
+                                            <!-- 差異4. 如果是系列 -->
+                                            <div class="badge-calc-group">
+                                                <span class="badge">
+                                                    線上研討會
+                                                    <span class="num">1024</span>
+                                                </span>
+                                                <span class="badge">
+                                                    隨選影片
+                                                    <span class="num">571</span>
+                                                </span>
+                                            </div>
+                                            <!-- 差異4. 如果是系列 -->
+                                            <!-- 差異 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- result item -->
+                            </div>
+                            <div class="search-result-pagination">
+                                <nav class="pagination-nav" aria-label="Navigation of webinar list page">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1">
+                                                <i class="fas fa-angle-left"></i>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">
+                                                <i class="fas fa-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="https://picsum.photos/id/777/970/90" alt="" class="img-fluid">
+            </div>
+            <ul class="footer-nav">
+                <li>電週文化事業版權所有、轉載必究 | Copyright © </li>
+                <li>
+                    <a href="https://www.ithome.com.tw/" target="_blank" class="footer-nav-link">iThome</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <button href="goTopBtn" title="Go to top" class="goTopBtn"><i class="fas fa-chevron-up"></i></button>
+    <!-- jQuery -->
+    <script src="js/jquery3.5.1.js"></script>
+    <script src="js/popper.1.16.1.js"></script>
+    <script src="js/bootstrap.4.6.2.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script>
+        //Get the button
+        // var mybutton = document.getElementById("gotopBtn");
+
+        // // When the user scrolls down 20px from the top of the document, show the button
+        // window.onscroll = function () {
+        //     scrollFunction()
+        // };
+
+        // function scrollFunction() {
+        //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        //         mybutton.style.display = "block";
+        //     } else {
+        //         mybutton.style.display = "none";
+        //     }
+        // }
+
+        // // When the user clicks on the button, scroll to the top of the document
+        // function topFunction() {
+        //     document.body.scrollTop = 0;
+        //     document.documentElement.scrollTop = 0;
+        // }
+    </script>
+</body>
+
+</html>

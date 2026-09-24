@@ -1,0 +1,135 @@
+/*sponsor*/
+.section-sp {
+    background-color: #fff;
+}
+
+
+
+.level-block-img,
+.company-inner-img {
+    border: 1px solid #ffe4ad;
+}
+
+.level-block-img:hover {
+    box-shadow: rgba(136, 165, 191, 0.48) 0px 4px 12px;
+}
+
+.level-block-title {
+    padding: 6px 0 20px;
+    text-align: center;
+}
+
+.hire-badge {     
+    font-size: 16px;       
+    line-height: 1;
+    color: #fff;
+    background-color: #c2143b; 
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+
+/*sponsor-inner*/
+.section-company-inner {
+    background-color: #fff;
+    padding-top: 5%;
+}
+
+.speaker-inner-img {
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: rgba(116, 145, 202, 0.6) 2.4px 2.4px 4px;
+}
+
+.company-inner-icon {
+    text-align: left;
+    padding: 15px 0;
+}
+
+.company-inner-icon i {
+    padding: 0 6px;
+}
+
+.company-inner-icon a {
+    color: #333;
+}
+
+.company-inner-icon a:hover {
+    color: #2c9791;
+}
+
+.company-info-title {
+    color: #2c9791;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.company-title,
+.company-title-en {
+    text-align: left;
+}
+
+.company-title {
+    font-weight: 700;
+}
+
+.company-info {
+    text-align: justify;
+}
+
+.company-box {
+    border: 1px solid #2c9791;
+    box-shadow: 5px 5px 0px 2px #e0e0e0;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #fff;
+
+}
+
+.company-box-txt p {
+    margin-bottom: 10px;
+}
+
+.company-inner:nth-of-type(even) {
+    background-color: #ddf4ff;
+}
+
+.company-title>a {
+    color: #2c9791;
+}
+
+.company-title>a:hover {
+    color: #DD4116;
+}
+
+.btn-primary {
+    background-color: #2c9791;
+}
+
+.btn-outline-primary {
+    border-color: #2c9791;
+    color: #2c9791;
+}
+.btn-outline-primary:hover {
+    background-color: #2c9791;
+    color:  #fff;
+}
+
+.job-card{
+    padding: 20px 24px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin: 10px;
+    border: 1px #eee solid;
+}
+
+.job-info{
+    font-size: 20px; 
+    line-height: 1.2;  
+}
+
+.job-info li{
+    padding-top: 2px;
+    font-weight: 700;
+}

@@ -1,0 +1,134 @@
+/**************
+ list page: topic-list
+**************/
+.sec-list.sec-topic-list {}
+
+
+/* tab control */
+.topic-list-control {
+  padding: 0 20px 20px;
+}
+.control-desc {
+  margin: 0;
+  padding: 6% 0 3%;
+}
+.searchbar {
+  padding-bottom: 8%;
+}
+
+.tab-column-group {}
+
+.tab-column-group .nav-link {
+}
+.tab-column-group .nav-link:hover {
+}
+.tab-column-group .nav-link.active {
+}
+
+@media (max-width: 991px) {
+  /* tab control */
+  .topic-list-control {
+  }
+  .tab-column-group .nav-item {}
+
+  .control-desc {
+    padding: 4% 0 1%;
+  }
+  .searchbar {
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  .tab-column-group {}
+
+  .tab-column-group .nav-link {
+  }
+  .tab-column-group .nav-link:hover {
+  }
+  .tab-column-group .nav-link.active {
+  }
+}
+
+
+
+/*  tab 結果區 tab-content */
+
+.topic-list-tab-content {
+  background-color: #fff;
+  padding: 15px 20px;
+}
+.tab-column-content {}
+.topic-listbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+.list-item {
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  counter-increment: step;
+  line-height: 1;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: baseline;
+  padding-left: 1rem;
+}
+.list-item:focus, .list-item:hover {
+  background-color: #f8f9fa;
+}
+.list-item:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.list-item .list-item-num {
+
+}
+.list-item .list-item-num::before {
+  content: counter(step);
+  display: inline-block;
+  color: #ccc;
+  font-size: 1.2rem;
+  font-family: var(--fontMath);
+  padding-right: 0.5rem;
+  min-width: 40px;
+  text-align: center;
+}
+/* 共用 TOPIC tag 在 main.css */
+.list-item .topic {}
+.list-item .topic-link {
+  display: block;
+}
+
+
+/* 放到 main.css 共用 */
+.list-item .badge-calc-group {
+  margin-left: auto;
+}
+.list-item .badge-calc-group .badge {
+  margin-left: 10px;
+}
+.list-item .badge-calc-group .num {
+}
+
+
+@media (max-width: 991px) {
+  .sec-list.sec-topic-list {
+    padding-top: 10px;
+  }
+  .list-item {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    padding: 5px 0 5px 10px;
+  }
+  .topic-link {
+    line-height: 1.6;
+  }
+}

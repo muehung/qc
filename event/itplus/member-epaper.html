@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="iTtalk" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="iTtalk" />
+    <meta property="og:image" content="img/fb.jpg" />
+    <title>iTtalk</title>
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.4.6.2.min.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome.5.5.0.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/member.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav-mainbox navBox" id="nav-xs">
+        <div class="nav-mainbox-frondbox">
+            <a href="/" class="nav-logobox">
+                <img src="img/logo_it.svg" alt="" class="logo">
+            </a>
+            
+            <a type="button" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <!-- navbar 不需登入 -->
+        <div class="nav-mainbox-normal navInnerHeight clearfix">
+            <form class="nav-form-search">
+                <input class="form-control search-input" type="search" placeholder="輸入關鍵字搜尋" aria-label="Search">
+                <button class="btn search-click" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="normal-menu">
+                <li class="nav-li"><a href="" class="nav-li-a">觀看線上研討會</a></li>
+                <li class="nav-li"><a href="" class="nav-li-a">觀看隨選影片</a></li>
+                <li class="nav-li down-inside">
+                    <a href="" class="nav-li-a downInsideMenu">
+                        探索
+                    </a>
+                    <div class="down-menu downMenu">
+                        <ul class="nav-list down navInside">
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a" target="_blank">頻道</a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a" target="_blank">主題</a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a" target="_blank">系列</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-li down-inside">
+                    <a href="" class="nav-li-a downInsideMenu">
+                        下載中心
+                    </a>
+                    <div class="down-menu downMenu">
+                        <ul class="nav-list down navInside">
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a">簡報</a>
+                            </li>
+                            <li class="nav-li">
+                                <a href="" class="nav-li-a">白皮書</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- navbar 會員區 -->
+        <div class="nav-mainbox-member">
+            <!-- login out 登出中 -->
+            <!-- <ul class="nav-memberbox-logout">
+                <li class="nav-li nav-li-member-logout">
+                    <a href="" class="nav-li-a login">登入 / 註冊</a>
+                </li>
+            </ul> -->
+
+            <!-- login ing 登入中 -->
+            <ul class="nav-memberbox-logining">
+                <div class="nav-li nav-li-alert d-none d-lg-inline-block">
+                    <a href="" class="nav-li-a">
+                        <div class="far fa-bell alertbox">
+                            <span class="alert-number">99<sup>+</sup></span>
+                        </div>
+                    </a>
+                </div>
+                <li class="nav-li nav-li-member-logining navMember">
+                    <a href="" class="nav-li-a down-inside">
+                        <div class="avatar-box avatarBtn">
+                            <img src="https://member.ithome.com.tw/avatars/131678?s=ithelp" alt="avatar" class="avatar-img">
+                        </div>
+                    </a>
+                    <ul class="logining-menu nav-list down" id="downMemberMenu">
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">我的報名</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">最近觀看的隨選影片</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">我訂閱的頻道</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">我的收藏</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">我的評價</a>
+                        </li>
+
+                        <div class="hr"></div>
+
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a">帳號設定</a>
+                        </li>                              
+                        <li class="nav-li">
+                            <a href="" class="nav-li-a logout">登出</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </div>
+        
+    
+    </nav>
+    <!-- end Navigation -->
+
+
+    <!-- kv  -->
+    <!-- <div class="kv-content">
+        <div class="container">
+            <div class="kv-txt">
+                <h2 class="kv-title">
+                    iTtalk 主題列表
+                </h2>
+                <h4 class="sub">
+                    我是主題頁的 slogan 我是主題頁的 slogan
+                </h4>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 提示框區 -->
+    <div class="row flex-column alert-area ">
+        <div class="alert alert-darkness alert-dismissible fade show" role="alert">
+            <div class="p">電子報訂閱設定已儲存</div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-darkness alert-dismissible fade show" role="alert">
+            <div class="p">已關閉相關推薦</div>
+            <!-- <div class="p">已開啟相關推薦</div> -->
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-darkness alert-dismissible fade show" role="alert">
+            <div class="p">已關閉線上研討會觀看提醒</div>
+            <!-- <div class="p">已開啟線上研討會觀看提醒</div> -->
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-darkness alert-dismissible fade show" role="alert">
+            <div class="p">已關閉線上研討會精彩回顧通知</div>
+            <!-- <div class="p">已開啟線上研討會精彩回顧通知</div> -->
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- 提示框區 -->
+
+    
+    <section class="sec-page h-content sec-memeber">
+        <div class="container-page">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-3 member-menubox">
+                    <div class="member-info">
+                        <div class="member-info-avatar-box">
+                            <img src="https://member.ithome.com.tw/avatars/131678?s=ithelp" alt="avatar" class="member-info-avatar-img">
+                        </div>
+                        <div class="h6 member-info-avatar-name">MueHungMueHung</div>
+                    </div>
+                    <div class="member-menu">
+                        <!-- side menu tabs -->
+                        <ul class="nav flex-lg-column member-menu-column" role="tablist">
+                            <li class="nav-item">
+                                <a href="member-webinar.html" class="nav-link">
+                                    我的報名
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="member-history-vod.html" class="nav-link">
+                                    最近觀看的隨選影片
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="member-channel.html" class="nav-link">
+                                    我訂閱的頻道
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="member-collect.html" class="nav-link">
+                                   我的收藏
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="member-reply.html" class="nav-link">
+                                    我的評價
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="member-epaper.html" class="nav-link hot active">
+                                    電子報訂閱管理
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://ithelp.ithome.com.tw/users/setting" target="_blank" class="nav-link">
+                                    帳號設定 <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- side menu tabs -->
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 memeber-contentbox">
+                    <div class="row justify-content-center">
+                        <div class="col-12 member-content-header">
+                            <h2 class="">電子報訂閱管理</h2>
+                        </div>
+                        <div class="col-12 member-content-body epaper">
+                            <!--  -->
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <form action="" method="">
+
+                                        <div class="form-group border-bottom">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="btnSwitchPush">
+                                                <label class="custom-control-label" for="btnSwitchPush">
+                                                    <span class="h5">相關推薦</span>
+                                                    <p class="small text-mute pull-right">提供我們認為您會感興趣的線上研討會和隨選影片之內容</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group border-bottom">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="btnSwitchWatchAlert">
+                                                <label class="custom-control-label" for="btnSwitchWatchAlert">
+                                                    <span class="h5">線上研討會觀看提醒</span>
+                                                    <p class="small text-mute pull-right">報名的線上研討會開始前一日將為您寄送觀看提醒通知</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group border-bottom">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="btnSwitchrewindAlert">
+                                                <label class="custom-control-label" for="btnSwitchrewindAlert">
+                                                    <span class="h5">線上研討會精彩回顧通知</span>
+                                                    <p class="small text-mute pull-right">可觀看線上研討會精彩回顧時將為您寄送通知</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 text-center">
+                                            <button type="submit" class="btn btn-lg btn-theme">儲存</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- 燈箱 Modal -->
+  <!-- subscriptCancel -->
+  <div class="modal fade" id="subscriptCancel" tabindex="-1" aria-labelledby="subscriptCancel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="col-12 p-3">
+                    你確定要取消嗎？你確定要取消嗎？你確定要取消嗎？你確定要取消嗎？你確定要取消嗎？你確定要取消嗎？你確定要取消嗎？你確定要取消嗎？
+                </div>
+            </div>  
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-theme">確定取消</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="https://picsum.photos/id/777/970/90" alt="" class="img-fluid">
+            </div>
+            <ul class="footer-nav">
+                <li>電週文化事業版權所有、轉載必究 | Copyright © </li>
+                <li>
+                    <a href="https://www.ithome.com.tw/" target="_blank" class="footer-nav-link">iThome</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <button href="goTopBtn" title="Go to top" class="goTopBtn"><i class="fas fa-chevron-up"></i></button>
+    <!-- jQuery -->
+    <script src="js/jquery3.5.1.js"></script>
+    <script src="js/popper.1.16.1.js"></script>
+    <script src="js/bootstrap.4.6.2.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

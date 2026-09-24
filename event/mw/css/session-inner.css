@@ -1,0 +1,320 @@
+/* 
+#1E4470
+ */
+
+/*********
+    agenda
+    **********/
+.home--agenda {
+    background-color: #F7F7F7;
+    padding: 5% 2% 2%; 
+    font-size: 16px;
+}
+
+
+.home--agenda .carousel-tabs {
+    overflow: visible;
+    max-width: 900px;
+    margin: 0 auto 2%;
+}
+.home--agenda .carousel-tabs .nav-link {
+    border: 3px solid #1E4470;
+    color: #1E4470;
+    text-align: center;
+    padding: .4rem;
+    margin: .5rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.home--agenda .carousel-tabs .nav-link.active {
+    background-color: #1E4470;
+    color: #ffffff;
+    position: relative;
+}
+.home--agenda .carousel-tabs .nav-link.disabled {
+    background-color: #ffffff00;
+    color: #1E4470;
+    opacity: .4;
+    position: relative;
+}
+
+.home--agenda .nav-item {
+}
+
+.agenda-time span {
+    border-radius: 2px;
+    border:1px solid #db03a5;
+    color: #db03a5;
+    padding: 2px 12px ;
+    word-break: keep-all;
+    white-space:nowrap;
+    
+}
+@media (max-width: 767px) {
+    .home--agenda .nav-item {
+        flex-basis: 50%;
+    }
+}
+/* .home--agenda .carousel-tabs .nav-link.active:after {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 10px 0 10px;
+    border-color: #fbf5e9 transparent transparent transparent;
+} */
+
+.home--agenda .speaker-thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #f9c857;
+    margin: 10px auto ;
+    overflow: hidden;
+}
+
+/* agenda 議程內容 */
+.home--agenda.home--agenda--content {
+    position: relative;
+    background: #202041;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    background: -moz-linear-gradient(to top, #202041 0%,#202041 85.9%, #F7F7F7 86%, #F7F7F7 100%);
+    background: -webkit-linear-gradient(to top, #202041 0%,#202041 85.9%, #F7F7F7 86%, #F7F7F7 100%);
+    background: linear-gradient(to top, #202041 0%,#202041 85.9%, #F7F7F7 86%, #F7F7F7 100%);
+}
+
+.agenda-deco-man {
+    position: absolute;
+    left: 20px;
+    top: 30%;
+    max-width: 100px;
+}
+.agenda-deco-planet {
+    position: absolute;
+    right: 20px;
+    bottom: 10%;
+    max-width: 70px;
+}
+.agenda-deco-man img, .agenda-deco-planet img {
+    width: 100%;
+}
+
+.agenda-content {
+    padding: 2rem 2rem 1rem;
+    margin: 1.2rem 0;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #20204182;
+}
+
+ .agenda-box {
+    padding: 1rem 1.2rem;
+    /* border-radius: 20px; */
+    
+}
+
+.agenda-box+.agenda-box {
+    border-top: 1px solid #888888;
+}
+
+
+.spk-info {
+    font-size: 16px;
+    /* padding: 1rem  1.2rem */
+}  
+
+
+
+/*********
+    session-inner page
+    **********/
+
+/* session row */
+.session-box {
+    margin: 1.8rem 0;
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
+ }
+
+ .session-box .btn {
+    border: 2px solid #4B3F72;
+    color: #4B3F72;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.session-box .btn:hover, .session-box .btn:active {
+    background-color: #4B3F72;
+    color: #ffffff;
+}
+
+.agenda-time {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px; 
+}
+
+.agenda-title {
+    color: #1E4470;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom:15px;
+}
+
+.agenda-info {
+    font-size: 16px;
+    padding: 20px 0px
+}
+
+.tagbox {
+    padding: 20px 0px;
+}
+.tagbox >span.tag  {
+    border:1px solid #db03a5;
+    color: #db03a5;
+    background-color: #ffffff;
+}
+.tagbox span{
+    display: inline-block;
+    padding: 4px 8px 3px;
+    margin: 0;
+    margin-right: 8px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    color: rgb(255, 255, 255);
+    background-color: #6650A9;
+    border: 1px solid;
+}
+
+/* speaker row */
+.section--speaker {
+    background: url('../img/bg2.jpg') repeat center center / 80%;
+    padding: 5% 2%; 
+    /* background-color: #202041 */
+}
+.section--speaker .title {
+    color: #f9c857;
+}
+
+.speaker-box {
+    margin: 1rem 0;
+    border-radius: 6px;
+    padding: 20px 0px
+}
+.speaker-badge {
+    position: absolute;
+    top: -20px;
+    background-color: #2e9791;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.speaker-badge div {
+    color: #ffffff;
+    line-height: 1.3em;
+    font-size: 20px;
+    margin-left: 0;
+    font-weight: 400;
+}
+
+.speaker-txt {
+    border-radius: 6px;
+    border:1px solid #cccccc;
+    background-color: #ffffff
+}
+
+.speaker-desc {
+    color: #888888;
+    line-height: 1.5;
+    padding: 20px 28px;
+    margin-top: 30px;
+}
+.speaker-name {
+    
+    margin: 20px 0px;
+    color: #ffffff;
+    text-align: center;
+}
+.speaker-name-main {
+    font-size: 18px;
+}
+.speaker-name-title {
+}
+.speaker-thumb {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #f9c857;
+    margin: 10px auto ;
+    overflow: hidden;
+    position: relative;
+}
+.speaker-thumb-mask {
+    background-color: #f9c857aa;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    -webkit-transform: translateY(-300px);
+    -ms-transform: translateY(-300px);
+    transform: translateY(-300px)
+}
+.speaker-thumb-mask i, .speaker-thumb-mask svg {
+    font-size: 40px;
+    line-height: 200px;
+    color:#333;
+    text-shadow: 0 0 10px #ffe8b3;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px)
+}
+
+.speaker-thumb:hover .speaker-thumb-mask {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px)
+}
+.speaker-thumb:hover .speaker-thumb-mask i, .speaker-thumb-mask svg {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px)
+}
+
+.speaker-thumb img {
+    width: 100%;
+}
+
+.speaker-inner-icon {
+    border-top: 1px solid #cccccc;
+    padding: 15px 0;
+    display: flex;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.speaker-inner-icon i {
+    padding: 0 6px;
+}
+
+.speaker-inner-icon a {
+    color: #333;
+}
+
+.speaker-inner-icon a:hover {
+    color: #2e9791;
+}
